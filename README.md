@@ -1,4 +1,4 @@
 **Hi I'm Buddini.  This is my Portfolio.**
 
 
-![](assests/gif/img.gif)
+![](assests/gif/img.gif) 
