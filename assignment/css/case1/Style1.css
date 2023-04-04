@@ -1,0 +1,100 @@
+.box{
+    width: 70%;
+    height: 25rem;
+    border: 3px solid black;
+    position: relative;
+}
+
+#person{
+    position: absolute;
+    right: 11%;
+    bottom: 9%;
+    margin: auto;
+}
+
+#car{
+    position: absolute;
+    right: -29%;
+    bottom: 8%;
+    margin: auto;
+}
+
+#box1{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: 1%;
+    right: 81%;
+    top: -82%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#box2{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: -63%;
+    right: 0;
+    top: -44%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#box3{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: -49%;
+    right: 0;
+    top: -6%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#box4{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: -35%;
+    right: 0;
+    top: 32%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#box5{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    left: -20%;
+    right: 0;
+    top: 70%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#plane{
+    position: absolute;
+    right: -117px;
+    top: 3px;
+    margin: auto;
+}
+
+#car1{
+    position: absolute;
+    right: -2135px;
+    bottom: 4px;
+    margin: auto;
+}
+
+
+
+
+
+
