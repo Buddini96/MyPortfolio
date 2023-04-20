@@ -9,8 +9,11 @@
     <style>
         header{
             background: white;
+            top: 0;
             box-shadow: 1px 2px 3px 2px;
-
+            position: fixed;
+            width: 100%;
+            z-index: 2;
 
         }
         header>img{
@@ -43,11 +46,13 @@
         }
 
         main>section>section>div{
-            height: 650px;
+            height: 720px;
             width: 300px;
             background-color: purple;
             border: solid black 1px;
             position: absolute;
+            top: 25px;
+            left: 0;
 
         }
 
@@ -63,6 +68,7 @@
             width: 300px;
             position: absolute;
             left: 330px;
+            top: 40px;
             /*border: solid black 1px;*/
         }
 
@@ -71,7 +77,17 @@
             width: 300px;
             position: absolute;
             left: 730px;
+            top: 40px;
             /*border: solid black 1px;*/
+        }
+
+        body>main{
+            margin-top: 1px;
+            z-index: 4;
+
+        }
+        #main{
+            margin: 10px;
         }
 
         #div3>img{
@@ -79,6 +95,7 @@
             width: 300px;
             position: absolute;
             left: 1150px;
+            top: 40px;
             /*border: solid black 1px;*/
         }
         /*#pic{*/
@@ -99,7 +116,7 @@
         }
 
         main>section>section>div>nav>ul>h4>li{
-            padding-top: 20px;
+            padding-top: 30px;
 
         }
 
@@ -123,7 +140,7 @@
     </nav>
 </header>
 <main>
-    <section>
+    <section id="main">
     <section>
         <div>
             <nav>
@@ -162,7 +179,10 @@
             <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
                 consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
                 quam recusandae sequi voluptatibus.</p>
+
+
         </section>
+
 
     </section>
 </main>
