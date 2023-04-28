@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case Four</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        section > section {
+            height: 90%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section > section > p {
+            font-size: 150px;
+        }
+
+        section > div > p{
+            font-size: 30px;
+        }
+
+        section > div {
+            width: 100%;
+            height: 10%;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        section:nth-child(1) > div {
+            background: red;
+        }
+
+        section:nth-child(1) > section {
+            background: white;
+        }
+
+        section:nth-child(2) > div {
+            background: #003366;
+        }
+
+        section:nth-child(2) > section {
+            background: #67bce7;
+        }
+
+        section:nth-child(3) > div {
+            background: black;
+        }
+
+        section:nth-child(3) > section {
+            background: grey;
+        }
+
+        section:nth-child(4) > div {
+            background: #984949;
+        }
+
+        section:nth-child(4) > section {
+            background: #ef3434;
+        }
+
+        section > div > p {
+            margin-top: 0px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p>Card 1</p>
+        </div>
+
+        <section>
+            <p>Hello</p>
+        </section>
+    </section>
+
+    <section>
+        <div>
+            <p>Card 2</p>
+        </div>
+
+        <section>
+            <p>How</p>
+        </section>
+    </section>
+
+    <section>
+        <div>
+            <p>Card 3</p>
+        </div>
+
+        <section>
+            <p>Are</p>
+        </section>
+    </section>
+
+    <section>
+        <div>
+            <p>Card 4</p>
+        </div>
+
+        <section>
+            <p>You ..?</p>
+        </section>
+    </section>
+</body>
+</html>
