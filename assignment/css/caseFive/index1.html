@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid layout</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        section{
+            position: relative;
+            left: 30px;
+            top: 30px;
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            display: grid;
+            /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+            grid-template-rows: repeat(3,1fr);
+            /*grid-template-columns: 1fr 1fr 1fr ;*/
+            grid-template-columns: repeat(4,1fr);
+            /*grid-gap: 2px;*/
+           /* grid-row-gap: 2px;*/
+            /*grid-column-gap: 2px;*/
+        }
+
+        section>div{
+            border: 1px solid red;
+        }
+
+        section>div:nth-child(1){
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    </section>
+
+</body>
+</html>
