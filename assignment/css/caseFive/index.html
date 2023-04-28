@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        section{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            height: 400px;
+            width: 1300px;
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+            /*align-items: flex-start;!*top*!*/
+            /*align-items: flex-end;!*bottom*!*/
+            /*justify-content: space-around;*/ /*//seperate blocks*/
+            justify-content: space-around;/*devide space into same length*/
+        }
+
+        section>div{
+            border: 1px solid red;
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</body>
+</html>
