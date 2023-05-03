@@ -10,6 +10,10 @@
         <meta content="author" name="Buddini Pathinayaka">
         <meta content="owner" name="Buddini Pathinayaka">
         <meta content="width=device-width initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
+        <link rel="stylesheet" href="assests/css/normalize.css">
+        <link rel="stylesheet" href="assests/css/styles.css">
         <!--Favicon-->
         <link rel="icon" href="assests/images/favicon.png">
         
@@ -17,48 +21,73 @@
 <!--Body Content-->
 <body>
 <header>
-    <h2>Portfolio</h2>
-    <nav> <!--The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
-        <menu>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a> </li>
-            <li><a href="#education">Education</a> </li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#projects">Projects</a> </li>
-            <li><a href="#contact">Contact</a> </li>
-        </menu>
+    <aside>
+        <div class="heading1Shape"></div>
+        <span id="heading1">Portfo<span id="heading2">lio</span></span>
+    </aside>
+    <nav class="menu"> <!--The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#home">Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a> </li>
+            <li><i class="fa-solid fa-user-graduate"></i><a href="#education">Education</a> </li>
+            <li><i class="fa-regular fa-images"></i><a href="#gallery">Gallery</a></li>
+            <li><i class="fa-regular fa-folder-open"></i><a href="#projects">Projects</a> </li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#contact">Contact</a> </li>
+        </ul>
     </nav>
+    <aside>
+        <div class="heading2Shape"></div>
+    </aside>
 </header>
 
 <!--Main Body Content Part-->
 <main>
     <!--Home-->
     <section id="home">
-        <aside></aside> <!--Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage-->
-        <article> <!--The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable-->
-            <h1>Hi! I'm Buddini Pathinayaka</h1>
-            <h2>A Developer</h2>
-            <h3>Find me</h3>
-            <img src="assests/images/Insta.png" width="2%">
-            <a href="https://www.instagram.com/_buddini_pathinayaka_/?hl=en" target="_blank"></a>
+        <div><img class="profile" src="assests/images/profile1.PNG"> </div>
+        <section id="home1">
+            <div>
+                <aside>
+                    <h1><span id="name1">Hi! <span id="name2"> I'm Buddini Pathinayaka</span></span></h1>
+                    <h1><span id="dev1">A<span id="dev2"> Developer</span></span></h1>
+                    <!--Aside tag in HTML mainly used to display important content of the webpage. It works as a highlighter to focus on the main things from the webpage-->
 
-            <img src="assests/images/Linkdin%20Icon.png" width="2%">
-            <a href="https://www.linkedin.com/in/buddini-pathinayaka-26220016a/"></a>
+                    <section>
+                        <h3>Find me</h3>
+                        <nav>
+                            <div><a href="https://www.instagram.com/_buddini_pathinayaka_/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                            <div><a href="https://www.linkedin.com/in/buddini-pathinayaka-26220016a/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></div>
+                            <div> <a href="https://twitter.com/BPathinayaka" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></div>
+                            <div><a href="https://github.com/Buddini96" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></div>
+                        </nav>
+                    </section>
+                    <!--<div><img class="profile" src="assests/images/a.PNG"> </div>-->
+                </aside>
 
-            <img src="assests/images/Twit.png" width="2%">
-            <a href="https://twitter.com/BPathinayaka"></a>
 
-            <img src="assests/images/Git.png" width="2%">
-            <a href="https://github.com/Buddini96"></a>
-        </article>
+
+            </div>
+        </section>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <br>
+        <br>
+        <br>
+
     </section>
 
     <section id="about">
-        <!--About-->
+        <div><img class="profile2" src="assests/images/profile2.PNG"> </div>
             <div>
                 <!--About me in detail-->
                 <h2>About Me</h2>
-                <p>
+                <p class="para">
                     I am Buddini. A student of Grduate Diploma in Software Engineering
                     and currently completing my Second semester.<br> I like to improve my
                     skills working with projects.
@@ -68,7 +97,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="info">
                 <!--Personal Information-->
                 <ul>
                     <li><bdi>Name</bdi>
@@ -146,7 +175,7 @@
             </li>
         </ul>
 
-        <div>
+        <div class="skills">
             <h2>Skills</h2>
             <!--Skills-->
             <img src="assests/images/c++.png" width="2%">
@@ -170,7 +199,21 @@
     <section id="gallery">
         <!--Gallery-->
         <h2>Gallery</h2>
-        <aside> <img src="assests/images/Gallery.png"></aside>
+        <section class="galleryGrid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
     </section>
 
     <section id="projects">
