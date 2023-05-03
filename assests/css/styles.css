@@ -6,7 +6,9 @@ header {
     height: 73px;
     z-index: 999;
 }
+body{
 
+}
 #heading1 {
     position: relative;
     left: 10px;
