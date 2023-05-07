@@ -224,12 +224,14 @@ main>section:nth-child(2) {
     top: 0;
     width: 100%;
     height: 100%;
-    /*background: rgba(236, 240, 243, 0.4);*/
+    background: rgb(71, 238, 4);
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
  main #about{
      width: 100%;
-     height: 100vh;
+     height: 90vh;
  }
 
 .profile2 {
@@ -249,8 +251,10 @@ main>section:nth-child(2) {
 
 main #education {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #bd0b59;
+    margin-top: -20px;
+
 
 }
 
@@ -261,6 +265,7 @@ main #gallery {
     height: 110%;
     background: #f3ecec;
     top: 100%;
+
 
 }
 
@@ -298,7 +303,7 @@ main #gallery section:first-child h1 {
 * title underline in gallery section
 */
 
-/*main #gallery section:first-child>h1::before {
+main #gallery section:first-child>h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -308,9 +313,9 @@ main #gallery section:first-child h1 {
     bottom: 2px;
     left: calc(50% - 60px);
     border-radius: 2px;
-}*/
+}
 
-/*main #gallery section:first-child h1::after {
+main #gallery section:first-child h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -320,7 +325,7 @@ main #gallery section:first-child h1 {
     bottom: 0;
     left: calc(50% - 20px);
     border-radius: 3px;
-}*/
+}
 
 /**
 * added section positions gallery section
@@ -454,6 +459,8 @@ main .skills {
     width: 100%;
     height: 50vh;
     position: relative;
+    margin-top: -20px;
+
 
 }
 
@@ -531,11 +538,15 @@ main #projects{
     height: 120%;
     width: 100%;
     top: 100%;
+    margin-top: -20px;
+
 
 }
 
 main #contact{
     background-color: antiquewhite;
+    margin-top: -20px;
+
 }
 
 footer {
@@ -544,6 +555,8 @@ footer {
     bottom: 0;
     background-color: #bd0b59;
     position: relative;
+    margin-top: -20px;
+    margin-bottom: -20px;
 
 
 }
