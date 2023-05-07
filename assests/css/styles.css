@@ -453,7 +453,7 @@ main .skills {
     background-color: #0c1154;
     width: 100%;
     height: 50vh;
-    position: absolute;
+    position: relative;
 
 }
 
@@ -530,6 +530,7 @@ main #projects{
     background-color: #909597;
     height: 120%;
     width: 100%;
+    top: 100%;
 
 }
 
