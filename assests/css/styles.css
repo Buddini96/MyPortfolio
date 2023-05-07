@@ -250,6 +250,8 @@ main>section:nth-child(2) {
 main #education {
     width: 100%;
     height: 100vh;
+    background-color: #bd0b59;
+
 }
 
 /*-------------------gallery section-------------------*/
@@ -257,7 +259,8 @@ main #gallery {
     position: relative;
     width: 100%;
     height: 110%;
-    background: #540e4a;
+    background: #f3ecec;
+    top: 100%;
 
 }
 
@@ -522,13 +525,12 @@ main>section:nth-child(4)>section:nth-child(3) {
     }
 }
 
-main #education{
-    background-color: #0c1154;
-
-}
 
 main #projects{
     background-color: #909597;
+    height: 120%;
+    width: 100%;
+
 }
 
 main #contact{
@@ -537,9 +539,10 @@ main #contact{
 
 footer {
     width: 100%;
-    height: 15vh;
+    height: 50%;
     bottom: 0;
-    background-color: #0c1154;
+    background-color: #bd0b59;
+    position: relative;
 
 
 }
