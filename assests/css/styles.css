@@ -224,7 +224,7 @@ main>section:nth-child(2) {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(71, 238, 4);
+    background: rgb(255, 255, 255);
     margin-top: -20px;
     margin-bottom: -20px;
 }
@@ -252,7 +252,7 @@ main>section:nth-child(2) {
 main #education {
     width: 100%;
     height: 100%;
-    background-color: #bd0b59;
+    background-color: #ffffff;
     margin-top: -20px;
 
 
@@ -309,8 +309,8 @@ main #gallery section:first-child>h1::before {
     display: block;
     width: 120px;
     height: 2px;
-    background: #540e4a;
-    bottom: 2px;
+    background: rgba(14, 14, 14, 0.71);
+    bottom: -100px;
     left: calc(50% - 60px);
     border-radius: 2px;
 }
@@ -321,7 +321,7 @@ main #gallery section:first-child h1::after {
     display: block;
     width: 40px;
     height: 6px;
-    background: #e600ff;
+    background: #FFA500;
     bottom: 0;
     left: calc(50% - 20px);
     border-radius: 3px;
@@ -551,14 +551,19 @@ main #contact{
 
 footer {
     width: 100%;
-    height: 50%;
+    height: 70%;
     bottom: 0;
-    background-color: #bd0b59;
+    background-color: #0c1154;
     position: relative;
     margin-top: -20px;
     margin-bottom: -20px;
 
 
+}
+
+footer>h3{
+    align-content: center;
+    color: #ECF0F3;
 }
 
 
