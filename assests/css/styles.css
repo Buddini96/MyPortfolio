@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 header {
     position: fixed;
     background: #ECF0F3;
@@ -20,7 +21,7 @@ body::-webkit-scrollbar{
     left: 10px;
     top: 15px;
     text-decoration: none;
-    font-family: 'Agency FB';
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -29,7 +30,7 @@ body::-webkit-scrollbar{
 }
 
 #heading2 {
-    font-family: "Agency FB";
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -37,10 +38,10 @@ body::-webkit-scrollbar{
     color: #FFA500;
 }
 
-section {
+/*section {
     width: 100%;
     height: 100vh;
-}
+}*/
 
 header > h1 {
     font-size: 30px;
@@ -82,20 +83,22 @@ main {
     width: 100%;
 }
 
-main>section:nth-child(1) {
+main #home {
     position: relative;
-    /*background: #ECF0F3;*/
+    background: #ffffff;
     width: 100%;
-    height: 100%;
+    height: 99vh;
+    margin-top: -50px;
+
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1) {
+main #home section div:first-child>aside:nth-child(1) {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>h1:first-child {
+main #home section div:first-child>aside:nth-child(1)>h1:first-child {
     font-family: 'Poppins', sans-serif;
     font-size: 31px;
     margin-top: 100px;
@@ -104,7 +107,7 @@ main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>h1:first-ch
     color:#0c1154;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>h1:nth-child(2) {
+main #home section div:first-child>aside:nth-child(1)>h1:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     font-size: 55px;
     margin-left: 100px;
@@ -112,7 +115,7 @@ main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>h1:nth-chil
 
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>h3:first-child {
+main #home section div:first-child>aside:nth-child(1)>h3:first-child {
     font-family: 'Poppins', sans-serif;
     font-size: 31px;
     margin-top: 100px;
@@ -130,7 +133,8 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
 
 #home1{
     margin-left: 5%;
-    margin-top: 8%;
+    margin-top: 11%;
+    margin-right: 5%;
 }
 
 #home1 h1{
@@ -146,28 +150,28 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
     color: #FFA500
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
+main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
     font-family: 'Inter', sans-serif;
     font-size: 23px;
     color: #909597;
     margin-left: 100px;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
     display: flex;
     gap: 15px;
     margin-left: 100px;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div {
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div {
     width: 60px;
     height: 60px;
     background: rgba(236, 240, 243, 0.85);
-    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    box-shadow: 1px -1px 5px #FFFFFF, 10px 10px 10px rgba(13, 39, 80, 0.16);
     border-radius: 15px;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div>a>i {
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div>a>i {
     position: relative;
     left: 23%;
     top: 20%;
@@ -176,19 +180,19 @@ main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth
     cursor: pointer;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div:nth-child(1)>a>i {
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div:nth-child(1)>a>i {
     font-size: 2.5em;
     top: 15%;
     left: 20%;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div:nth-child(4)>a>i {
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div:nth-child(4)>a>i {
     font-size: 2.5em;
     top: 17%;
     left: 17%;
 }
 
-main>section:nth-child(1)>section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div:hover,
+main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div:hover,
 a>i:hover {
     transition: all 0.5s ease;
     -webkit-transform: scale(1.10);
@@ -211,27 +215,30 @@ main #profile{
     background-size: cover;
     position: relative;
     float: right;
-    top: 17%;
-    right: 40px;
+    top: 20%;
+    right: 85px;
     bottom: 20%;
 
 }
 
-/*about section*/
-
-main>section:nth-child(2) {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
-
+/*----------------------about scetion --------------------------------*/
  main #about{
+     position: relative;
+     top: 0;
      width: 100%;
-     height: 90vh;
+     height: 80vh;
+     background: rgb(255, 255, 255);
+     margin-top: -20px;
+     margin-bottom: -20px;
+ }
+
+ main #about h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 30px;
+     line-height: 52px;
+     margin-top: 0;
+     margin-bottom: 24px;
+     color: #0c1154;
  }
 
 .profile2 {
@@ -244,16 +251,102 @@ main>section:nth-child(2) {
     padding-left: 3%;
 }
 .para {
-    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.71) !important;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.para1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.71) !important;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.a1>i, .a2>i, .a3>i, .a4>i{
+    color: #FFA500;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.info span{
+    color: rgba(14, 14, 14, 0.71) !important;
+}
+
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgba(236, 240, 243, 0.85);
+    box-shadow: 1px -1px 5px #FFFFFF, 10px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.wrapper .button:hover{
+    width: 200px;
+}
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #FFA500;
+}
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+    color: #fff;
+}
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+
+}
+.wrapper .button:nth-child(1) span{
+    color: #0c1154;
 }
 
 /*-------------------education section-------------------*/
 
 main #education {
     width: 100%;
-    height: 100%;
-    background-color: #ffffff;
+    height: 60vh;
+    background-color: rgba(161, 147, 153, 0.69);
     margin-top: -20px;
+    margin-bottom: -30px;
 
 
 }
@@ -262,9 +355,10 @@ main #education {
 main #gallery {
     position: relative;
     width: 100%;
-    height: 110%;
+    height: 100vh;
     background: #f3ecec;
     top: 100%;
+    margin-top: -20px;
 
 
 }
@@ -280,63 +374,22 @@ main #gallery section:first-child {
     height: 0;
 }
 
-main #gallery section:first-child h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: initial;
-    font-size: 25px;
-    color: #FFA500 !important;
-    text-align: center;
-    padding-top: 12px;
-    margin: 0;
-}
 
 main #gallery section:first-child h1 {
     font-family: Ubuntu, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 7px;
     padding-bottom: 18px;
 }
 
-/**
-* title underline in gallery section
-*/
-
-main #gallery section:first-child>h1::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: rgba(14, 14, 14, 0.71);
-    bottom: -100px;
-    left: calc(50% - 60px);
-    border-radius: 2px;
-}
-
-main #gallery section:first-child h1::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 6px;
-    background: #FFA500;
-    bottom: 0;
-    left: calc(50% - 20px);
-    border-radius: 3px;
-}
-
-/**
-* added section positions gallery section
-*/
-
 main #gallery section:nth-child(2) {
     position:  relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 80px;
     padding-bottom: 7px;
 }
 
@@ -373,7 +426,11 @@ main #gallery section:nth-child(2)>section:first-child>div:first-child {
     grid-column: 1/3;
     background: url("../images/c1.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
+
 
 /**
  * Customized 02 Image
@@ -382,6 +439,9 @@ main #gallery section:nth-child(2)>section:first-child>div:first-child {
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(2) {
     background: url("../images/c3.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -393,6 +453,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(3) {
     grid-row: 1/4;
     background: url("../images/c2.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -402,6 +465,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(3) {
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(4) {
     background: url("../images/c10.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -411,6 +477,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(4) {
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(5) {
     background: url("../images/c4.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -420,6 +489,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(5) {
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(6) {
     background: url("../images/c5.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -429,6 +501,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(6) {
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(7) {
     background: url("../images/c8.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -440,6 +515,9 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(8) {
     grid-row: 3/4;
     background: url("../images/c7.jpg") center;
     background-size: cover;
+    object-position: center;
+    height: auto;
+    vertical-align: middle;
 }
 
 /**
@@ -457,7 +535,7 @@ main #gallery section:nth-child(2)>section:first-child>div:hover {
 main .skills {
     background-color: #0c1154;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     margin-top: -20px;
 
@@ -468,6 +546,8 @@ main .skills {
     color: #ECF0F3;
     alignment: center;
     left: 50px;
+    text-align: center;
+    font-size: 30px;
 }
 
 #skillsCube {
@@ -476,6 +556,8 @@ main .skills {
     height: 150px;
     left: 115px;
     top: 104px;
+    margin-top: -20px;
+
 }
 
 main>section:nth-child(4)>section:nth-child(3) {
@@ -483,13 +565,6 @@ main>section:nth-child(4)>section:nth-child(3) {
     left: 172px;
     top: 179px;
 }
-
-/*.slide-track {
-    display: flex;
-    background: #0c1154;
-    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
-    border-radius: 25px;
-}*/
 
 #skillsDashArrowShape {
     position: relative;
@@ -503,7 +578,7 @@ main>section:nth-child(4)>section:nth-child(3) {
 
 .slider {
     height: 100px;
-    margin: auto;
+    margin: 70px;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -535,35 +610,153 @@ main>section:nth-child(4)>section:nth-child(3) {
 
 main #projects{
     background-color: #909597;
-    height: 120%;
+    height: 120vh;
     width: 100%;
     top: 100%;
     margin-top: -20px;
 
-
 }
+
+/*---------------------------Contact sction------------------------*/
 
 main #contact{
-    background-color: antiquewhite;
+    background-color: #ECF0F3;
     margin-top: -20px;
-
-}
-
-footer {
     width: 100%;
-    height: 70%;
-    bottom: 0;
-    background-color: #0c1154;
+    height: 80vh;
+
+}
+ /*---------------------------footer sction------------------------*/
+footer {
     position: relative;
+    width: 100%;
+    background-color: #0c1154;
     margin-top: -20px;
-    margin-bottom: -20px;
-
+    padding-top: 0;
 
 }
 
-footer>h3{
-    align-content: center;
-    color: #ECF0F3;
+footer>section:first-child>div:first-child>h2:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+footer>section:first-child>div:first-child>h2:first-child>span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFA500;
+}
+
+footer>section:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>section:first-child>div:first-child>nav:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+footer>section:first-child>div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 37px
+}
+
+/**
+* customized social media icons covers in footer
+*/
+
+footer>section:first-child>div:first-child>nav:nth-child(2)>div {
+    width: 50px;
+    height: 50px;
+    background: #0c1154;
+    box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.11), 4px 4px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+footer>section:first-child>div:first-child>nav:nth-child(2)>div:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+footer>section:first-child>div:first-child>nav:nth-child(2)>div:hover>a>i:hover {
+    transition: all 0.5s ease;
+    color: #FFA500 !important;
+}
+
+
+footer>section:first-child>div:first-child>nav:nth-child(2)>div>a>i {
+    font-size: 2.00em;
+    color: #909597;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+}
+
+footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li>a {
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.3s all;
+    color: #FFFFFF;
+}
+
+
+footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child>li>a:hover {
+    color: #FFA500;
+    transition: 0.5s all;
+}
+
+/**
+* customized copyrights section in footer
+*/
+
+footer>section:nth-child(3) {
+    background: #0c1154;
+    text-align: center;
+}
+
+/**
+* added color copyrights section text in footer
+*/
+
+footer>section:nth-child(3)>small:first-child {
+    color: #D3D3D3;
+}
+
+#aboutCube2 {
+    display: none;
+}
+
+footer>section:first-child>div:first-child>h2:nth-child(4) {
+    display: none;
+}
+
+footer>section:first-child>div:first-child>h2:nth-child(4)>span {
+    display: none;
+}
+
 
 

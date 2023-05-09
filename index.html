@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
         <link rel="stylesheet" href="assests/css/normalize.css">
         <link rel="stylesheet" href="assests/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <!--Favicon-->
         <link rel="icon" href="assests/images/favicon.png">
         
@@ -88,10 +91,11 @@
                 <!--About me in detail-->
                 <h2>About Me</h2>
                 <p class="para">
-                    I am Buddini. A student of Grduate Diploma in Software Engineering
+                    I am Buddini. A student of Graduate Diploma in Software Engineering
                     and currently completing my Second semester.<br> I like to improve my
                     skills working with projects.
-
+                </p>
+                <p class="para1">
                     I’m very passionate and dedicated to my work.<br> An easy going person with a
                     positive attitude and good team work ability.
                 </p>
@@ -99,39 +103,42 @@
 
             <div class="info">
                 <!--Personal Information-->
-                <ul>
-                    <li><bdi>Name</bdi>
-                        : Buddini Klahari Pathianayaka
-                    </li>
-                </ul>
-                <ul>
-                    <li><bdi>Age</bdi>
-                        : 26 years
-                    </li>
-                </ul>
-                <ul>
-                    <li><bdi>Contact</bdi>
-                        : +9476 8861459
-                    </li>
-                </ul>
-                <ul>
-                    <li><bdi>Location</bdi>
-                        : Galle, Sri Lanka
-                    </li>
-                </ul>
-                <ul>
-                    <li><bdi>Email</bdi>
-                        : buddinikl1996@gmail.com
-                    </li>
-                </ul>
-                <ul>
-                    <li><bdi>Degree</bdi>
-                        : Undergraduate
-                    </li>
-                </ul>
+                <p class="a1">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <strong>Name :</strong>
+                    <span>Buddini Kalhari Pathinayaka</span>
+                </p>
+                <p class="a2">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <strong>Age :</strong>
+                    <span>26 years old</span>
+                </p>
+                <p class="a3">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <strong>Contact :</strong>
+                    <span>+94 768861459</span>
+                </p>
+                <p class="a3">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <strong>Location :</strong>
+                    <span>Galle,Sri Lanka</span>
+                </p>
+                <p class="a4">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <strong>Degree :</strong>
+                    <span>Undergraduate</span>
+                </p>
             </div>
+        </div>
 
-        <button>Download CV</button>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-solid fa-download"></i></i>
+                </div>
+                <span>Download CV</span>
+            </div>
+        </div>
     </section>
 
     <section id="education">
@@ -174,35 +181,10 @@
                 </dl>
             </li>
         </ul>
-
-
-
-
-
-
-
-
     </section>
 
     <section class="skills">
         <h2>Skills</h2>
-        <!--Skills-->
-        <!--<img src="assests/images/c++.png" width="2%">
-        <img src="assests/images/SceneBuilderLogo.png" width="2%">
-        <img src="assests/images/jav.gif" width="2%">
-        <img src="assests/images/mysql.png" width="2%">
-        <img src="assests/images/php.png" width="2%">
-        <img src="assests/images/html.png" width="2%">
-        <img src="assests/images/css.png" width="2%">
-        <img src="assests/images/figma.gif" width="2%">
-        <img src="assests/images/vs.png" width="2%">
-        <img src="assests/images/bootstrap.jpg" width="2%">
-        <img src="assests/images/intelij.png" width="2%">
-        <img src="assests/images/js.png" width="2%">
-        <img src="assests/images/R.png" width="2%">
-        <img src="assests/images/Python.png" width="2%">
-        <img src="assests/images/NetBeans_Logo.png" width="2%">-->
-
         <section id="new">
             <section id="icon-section">
                 <div class="slider">
@@ -232,10 +214,10 @@
                             <img src="https://skillicons.dev/icons?i=py" alt="">
                         </div>
                         <div class="slide">
-                            <img src="https://skillicons.dev/icons?i=angular" alt="">
+                            <img src="assests/images/intelij.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="https://skillicons.dev/icons?i=php" alt="">
+                            <img src="https://skillicons.dev/icons?i=figma" alt="">
                         </div>
                         <div class="slide">
                             <img src="https://skillicons.dev/icons?i=bootstrap" alt="">
@@ -246,6 +228,12 @@
                         <div class="slide">
                             <img src="https://skillicons.dev/icons?i=cpp" alt="">
                         </div>
+                        <div class="slide">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assests/images/SceneBuilderLogo.png" width="50px" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -255,7 +243,6 @@
     <section id="gallery">
         <!--title-->
         <section>
-            <h4>Gallery</h4>
             <h1>Gallery</h1>
             <div></div>
             <div></div>
@@ -358,13 +345,37 @@
 </main>
 
 <footer>
-    <!--Footer-->
-    <h3>Lets Talk !</h3>
-    <pre>
-        <img alt="phone" src="assests/images/Telephone.png" style="width:25px;height:25px;"></a>                 <img alt="Email" src="assests/images/Mail.png" style="width:25px;height:25px;"></a>                             <img alt="Email" src="assests/images/Location.png" style="width:25px;height:25px;"></a>
-        <b>Call  </b>              <b>E mail </b>                        <b>Address</b>
-        +94 76 8861459     buddinikl1996@gmail.com      Galle,Sri Lanka
-    </pre>
+    <section>
+        <div>
+            <h2>Portfo<span>lio</span></h2>
+            <nav>
+                <div><a href="https://www.instagram.com/_buddini_pathinayaka_/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/buddini-pathinayaka-26220016a/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a></div>
+                <div><a href="https://twitter.com/BPathinayaka" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a></div>
+                <div><a href="https://github.com/Buddini96" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#education">Education</a> </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+            <h2>Portfo<span>lio.</span></h2>
+        </div>
+    </section>
+    <aside>
+        <!--        <h4>Quick Contact</h4>-->
+    </aside>
+    <section><small>Buddini Pathinayaka &copy; 2023 - All rights reserved</small></section>
 </footer>
 
 
