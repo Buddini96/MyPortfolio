@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Five Animations</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body>section{
+            animation: slider 10s infinite alternate;
+            animation-delay: 2s;
+            position: relative;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 500%;
+            display: inline-block;
+        }
+
+        body>section>section{
+            height: 100%;
+            width: 100vw;
+            display: inline-block;
+        }
+
+        body>section>section>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body>section>section:nth-child(5){
+            width: 98vw;
+        }
+
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100vw;
+            }
+            50%{
+                left: -200vw;
+            }
+            75%{
+                left: -300vw;
+            }
+            100%{
+                left: -400vw;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <section><img src="assests/images/a1.jpg"></section>
+    <section><img src="assests/images/a2.jpg"></section>
+    <section><img src="assests/images/a3.jpg"></section>
+    <section><img src="assests/images/a4.jpg"></section>
+    <section><img src="assests/images/a5.jpg"></section>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+   <!-- <style>
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: slide 16s infinite;
+            animation-direction: alternate;
+            height: 100%;
+            width: 100vw;
+            display: inline-block;
+        }
+
+        div:nth-child(1) {
+            z-index: 3;
+            background-image: url("assests/images/a2.jpg");
+            animation-delay: 0s;
+        }
+
+        div:nth-child(2) {
+            z-index: 2;
+            background-image: url("assests/images/a3.jpg");
+            animation-delay: 4s;
+
+        }
+
+        div:nth-child(3) {
+            z-index: 1;
+            background-image: url("assests/images/a4.jpg");
+            animation-delay: 8s;
+        }
+
+        div:nth-child(4) {
+            z-index: 0;
+            background-image: url("assests/images/a1.jpg");
+            animation-delay: 12s;
+        }
+
+        @keyframes slide {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(100%);
+            }
+            /*0% {
+                transform: translateX(0%);
+            }
+            16.666% {
+                transform: translateX(-100%);
+            }
+            33.333% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            66.666% {
+                transform: translateX(100%);
+            }
+            83.333% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }*/
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
+-->
+

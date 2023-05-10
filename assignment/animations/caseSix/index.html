@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Six Animations</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        body{
+            background-size: cover;
+            background: url("assests/images/sky.jpg") center;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .background{
+
+        }
+
+        .city{
+            position: absolute;
+            left: 0;
+            bottom: 300px;
+            height: 250px;
+            width: 400%;
+            background: url("assests/images/city.png") repeat-x;
+            animation: cityAnimation 20s infinite;
+            z-index: 4;
+        }
+
+        .cityRoad{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 300px;
+            width: 400%;
+            background: url("assests/images/road.jpg");
+            animation: cityAnimation 20s infinite;
+            z-index: 5;
+        }
+
+        @keyframes cityAnimation {
+            from{
+
+            }
+            to{
+                transform: translateX(-295vw);
+            }
+        }
+
+        .car{
+            z-index: 10;
+            position: absolute;
+            display: inline-block;
+            width: 500px;
+            height: 208px;
+            bottom: 150px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .carBody{
+            background: url("assests/images/car.png");
+            background-size: cover;
+            width: 500px;
+            height: 208px;
+        }
+
+        .wheel{
+            transform: scale(0.4);
+        }
+
+        .wheel img{
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            animation: wheelAnimation 20s infinite;
+            transition: 14s;
+        }
+
+        .wheel img:nth-child(1){
+            left: -275px;
+        }
+
+        .wheel img:nth-child(2){
+            right: -235px;
+        }
+
+        @keyframes wheelAnimation {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<section class="background">
+    <section class="city"></section>
+    <section class="cityRoad"></section>
+</section>
+<section class="car">
+    <div class="carBody"></div>
+    <div class="wheel">
+        <img src="assests/images/wheel.png" alt="">
+        <img src="assests/images/wheel.png" alt="">
+    </div>
+</section>
+</body>
+</html>

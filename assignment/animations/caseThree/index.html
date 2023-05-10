@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Three Animations</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        div{
+            position: absolute;
+            width: 170px;
+            height: 90px;
+            background-color: blue;
+            border-radius: 20px;
+            animation: boxAnimation 5s linear infinite alternate;
+        }
+
+        @keyframes boxAnimation {
+            0%{
+                top: 2%;
+                left: 2%;
+                margin: 0 0 0 0;
+                background-color: blue;
+                transform: rotate(0deg);
+            }
+
+            25%{
+                top: 2%;
+                left: 52%;
+                margin: 0 0 0 500px;
+                background-color: yellow;
+                transform: rotate(180deg);
+            }
+
+            50%{
+                top: 87%;
+                left: 62%;
+                background-color: red;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                top: 87%;
+                left: -6%;
+                background-color: deeppink;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                top: 2%;
+                left: 2%;
+                background-color: orange;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>
