@@ -299,8 +299,10 @@ main #profile{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    margin-left: 20px;
-    margin-top: 20px;
+    /*margin-left: 20px;
+    margin-top: 20px;*/
+    margin-top: -53px;
+    margin-left: -97px;
 }
 .wrapper .button:hover{
     width: 200px;
@@ -355,7 +357,7 @@ main #education {
 main #gallery {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 106vh;
     background: #f3ecec;
     top: 100%;
     margin-top: -20px;
@@ -377,11 +379,13 @@ main #gallery section:first-child {
 
 main #gallery section:first-child h1 {
     font-family: Ubuntu, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 16px;
     margin-bottom: 7px;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #0c1154;
 }
 
 main #gallery section:nth-child(2) {
@@ -389,7 +393,7 @@ main #gallery section:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 108px;
     padding-bottom: 7px;
 }
 
@@ -549,11 +553,14 @@ main .skills {
 }
 
 .skills>h2{
-    color: #ECF0F3;
-    alignment: center;
-    left: 50px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 50px;
     text-align: center;
-    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #f3f1ec;
 }
 
 #skillsCube {
@@ -587,7 +594,7 @@ main>section:nth-child(4)>section:nth-child(3) {
     margin: 70px;
     overflow: hidden;
     position: relative;
-    width: auto;
+    width: max-content;
 }
 
 .slider .slide-track {
@@ -615,13 +622,283 @@ main>section:nth-child(4)>section:nth-child(3) {
 
 
 main #projects{
-    background-color: #909597;
+    /*background-color: #909597;
     height: 120vh;
     width: 100%;
     top: 100%;
-    margin-top: -20px;
+    margin-top: -20px;*/
+
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+    margin-top: 0px;
+    background: rgba(54, 121, 27, 0.4);
+;
 
 }
+
+
+.wrapperProj .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: none;
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgba(236, 240, 243, 0.85);
+    box-shadow: 1px -1px 5px #FFFFFF, 10px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+.wrapperProj .button:hover{
+    width: 200px;
+}
+.wrapperProj .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapperProj .button:nth-child(1):hover .icon{
+    background: #FFA500;
+    margin-left: -29px;
+}
+
+.wrapperProj .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapperProj .button:hover .icon i{
+    color: #fff;
+}
+.wrapperProj .button span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+
+}
+.wrapperProj .button:nth-child(1) span{
+    color: #0c1154;
+}
+
+main #projects section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+main #projects section:first-child>h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFA500 !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main #projects section:first-child>h1 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -26px;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+    color: #0c1154;
+}
+
+/**
+* title underline in project section
+*/
+
+main #projects section:first-child>h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 241px;
+    height: 6px;
+    background: #0c1154;
+    bottom: 0;
+    left: calc(50% - 295px);
+    border-radius: 3px;
+}
+
+/**
+* added section and display flex type project section
+*/
+
+main #projects section:nth-child(2) {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+* added display flex and wrap project section
+*/
+
+.wrapper {
+    width: 1400px;
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 67px;
+    margin-right: 67px;
+    flex-wrap: wrap;
+}
+
+/**
+* position card project section
+*/
+
+.card {
+    position: relative;
+    width: 339px;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/**
+* added image padding project section
+*/
+
+.card-inner {
+    padding-right: 30px;
+}
+
+/**
+* position image project section
+*/
+
+.card-thumb {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: -10px;
+    margin-top: -23px;
+}
+
+/**
+* customized image sizes project section
+*/
+
+.card-thumb img {
+    width: 100%;
+    border-radius: 51px;
+    /*justify-content: center;
+    margin-left: 67px;*/
+}
+
+
+/**
+* added hover and color change project section
+*/
+
+.card-inner:hover .card-thumb span {
+    background-color: #fff;
+    color: #FFA500;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), -23px -23px 45px #FFFFFF ;
+}
+
+/**
+* customized card-details and position project section
+*/
+
+.card_detail {
+    position: relative;
+    height: 290px;
+    z-index: 1;
+    left: 30px;
+    text-align: center;
+    padding-top: 39px;
+}
+
+/**
+* customized card and position project section
+*/
+
+.card_detail::before {
+    position: absolute;
+    content: " ";
+    background-color: #ECF0F3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -200px;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 70px 70px 70px 70px;;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+}
+
+/**
+* added hover and card-inner, card-detail color change project section
+*/
+
+.card-inner:hover .card_detail::before {
+    background-color: #FFA500;
+}
+
+/**
+* added hover heading, description and icon project section
+*/
+
+.card-inner:hover .card_detail h4,
+.card-inner:hover .card_detail p,
+.card-inner:hover .card_detail a {
+    color: #fff;
+}
+
+/**
+* customized heading project section
+*/
+
+.card_detail h4 {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #444;
+    margin: 1px 50px 15px;
+    transition: .5s;
+}
+
+/**
+* customized description project section
+*/
+
+.card_detail p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+    transition: .5s;
+    margin: 0 20px 20px;
+}
+
+/**
+* customized icon project section
+*/
+
+.card_detail a {
+    font-size: 27px;
+    color: #FFA500;
+    transition: .5s;
+}
+
 
 /*---------------------------Contact sction------------------------*/
 
@@ -640,6 +917,10 @@ main #projects{
     grid-template-columns:  repeat(2, 1fr);
 }
 
+#contact{
+    background-color: #ECF0F3;
+}
+
 #contact form {
     padding: 50px;
 }
@@ -654,7 +935,7 @@ main #projects{
     color: #0c1154;
     text-align: center;
     font-family: Ubuntu, sans-serif;
-    margin-top: 5px;
+    margin-top: -40px;
     margin-bottom: -48px;
     /*padding-bottom: 18px;*/
 }
@@ -665,11 +946,6 @@ main #projects{
     flex-direction: column;
     background: #ECF0F3;
     position: relative;
-
-
-
-
-
     margin: 50px;
 
     box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
@@ -824,7 +1100,7 @@ footer {
     position: relative;
     width: 100%;
     background-color: #0c1154;
-    margin-top: -20px;
+    margin-top: 0px;
     padding-top: 0;
 
 }
