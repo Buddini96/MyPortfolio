@@ -444,7 +444,7 @@ main #gallery section:nth-child(2)>section:first-child>div:first-child {
  */
 
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(2) {
-    background: url("../images/c7.jpg") center;
+    background: url("../images/ca.jpg") center;
     background-size: cover;
     object-position: center center;
     height: auto;
@@ -482,7 +482,7 @@ main #gallery section:nth-child(2)>section:first-child>div:nth-child(4) {
  */
 
 main #gallery section:nth-child(2)>section:first-child>div:nth-child(5) {
-    background: url("../images/ca.jpg") center;
+    background: url("../images/c7.jpg") center;
     background-size: cover;
     object-position: center center;
     height: auto;
