@@ -625,13 +625,200 @@ main #projects{
 
 /*---------------------------Contact sction------------------------*/
 
-main #contact{
-    background-color: #ECF0F3;
+
+/*main #contact{
+    background-color: #540e4a;
     margin-top: -20px;
     width: 100%;
     height: 80vh;
 
+}*/
+
+#contact section:nth-child(2) {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns:  repeat(2, 1fr);
 }
+
+#contact form {
+    padding: 50px;
+}
+
+#contact aside {
+    padding: 50px;
+    background: #e7b609;
+}
+
+.heading_text{
+   font-size: 30px;
+    color: #0c1154;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    margin-top: 5px;
+    margin-bottom: -48px;
+    /*padding-bottom: 18px;*/
+}
+
+/* Target the form */
+#contact #contact_form {
+    display: flex;
+    flex-direction: column;
+    background: #ECF0F3;
+    position: relative;
+
+
+
+
+
+    margin: 50px;
+
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+/* Target the labels and inputs inside the form */
+#contact #contact_form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#contact #contact_form input[type="text"],
+#contact #contact_form input[type="email"],
+#contact #contact_form textarea {
+    padding: 10px;
+    /*border: #333960 solid 1px;*/
+    margin-bottom: 20px;
+}
+
+#contact #contact_form textarea {
+    height: 150px;
+}
+
+#contact #contact_form button[type="submit"] {
+    background-color: #242944;
+    border-bottom: #e7b609 2px solid;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    color: #fff;
+    padding: 10px 20px;
+    /*border: none;*/
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+
+#contact_form button[type="submit"] a, #contact_form button[type="submit"] i {
+    font-style: normal;
+    font-weight: bold;
+    color: #e7b609;
+    text-decoration: none;
+}
+
+#contact_form input {
+    background: #F7F8FA;
+    box-shadow: -1px -10px 45px #FFFFFF, 20px 20px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 0 0 0 20px;
+    height: 44px;
+}
+
+#contact_form textarea {
+    background: #F7F8FA;
+    box-shadow: -1px -10px 45px #FFFFFF, 20px 20px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 20px 0 0 20px;
+    height: 184px;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#contact #contact_form button[type="submit"]:hover {
+    background-color: #242944;
+}
+
+
+/* Target the aside */
+#contact #contact_info {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 50px;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+#contact #contact_info h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #0c1154;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+main>section:nth-child(3)>section:nth-child(2)>section>div {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #f3f1ec;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+/* Target the social media icons */
+#contact #contact_info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #contact_info ul li {
+    margin-right: 0;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #contact_info ul li img {
+    width: 70%;
+}
+
+#contact #contact_info ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_info p {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
  /*---------------------------footer sction------------------------*/
 footer {
     position: relative;
