@@ -38,6 +38,11 @@ body::-webkit-scrollbar{
     color: #FFA500;
 }
 
+#name2{
+    font-family: 'Abril Fatface', cursive;
+    color: #FFA500;
+}
+
 /*section {
     width: 100%;
     height: 100vh;
@@ -85,22 +90,24 @@ main {
 
 main #home {
     position: relative;
-    background: #ffffff;
+    background: #ECF0F3;
     width: 100%;
     height: 99vh;
-    margin-top: -50px;
+    margin-top: -150px;
 
 }
 
 main #home section div:first-child>aside:nth-child(1) {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
+    margin-left: -60px;
+    top: 6%;
 }
 
 main #home section div:first-child>aside:nth-child(1)>h1:first-child {
-    font-family: 'Poppins', sans-serif;
-    font-size: 31px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
     margin-top: 100px;
     margin-left: 100px;
     margin-bottom: 0;
@@ -108,8 +115,8 @@ main #home section div:first-child>aside:nth-child(1)>h1:first-child {
 }
 
 main #home section div:first-child>aside:nth-child(1)>h1:nth-child(2) {
-    font-family: 'Poppins', sans-serif;
-    font-size: 55px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 45px;
     margin-left: 100px;
     margin-bottom: 0;
 
@@ -131,9 +138,86 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
     border-radius: 25px;
 }
 
+
+.animated-text{
+    /*font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;*/
+
+    position: relative;
+    left: 79px;
+    top: 15px;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 46px;
+    color: #0c1154;
+    padding: 20px;
+}
+
+.animated-text span{
+    position: relative;
+
+    font-family: 'Abril Fatface', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFA500;
+}
+
+.animated-text span::before{
+    content: "Developer";
+    color: #FFA500;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #ECF0F3;
+    border-left: 2px solid #FFA500;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Developer";
+    }
+    21%,40%{
+        content: "Designer";
+    }
+    41%,60%{
+        content: "Developer";
+    }
+    61%,80%{
+        content: "Designer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
 #home1{
     margin-left: 5%;
-    margin-top: 11%;
+    margin-top: 14%;
     margin-right: 5%;
 }
 
@@ -151,7 +235,7 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
 }
 
 main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     font-size: 23px;
     color: #909597;
     margin-left: 100px;
@@ -211,13 +295,12 @@ main #profile{
 
 .profile {
     width: 550px;
-    height: 550px;
+    height: 532px;
     background-size: cover;
-    position: relative;
+    position: absolute;
     float: right;
-    top: 20%;
-    right: 85px;
-    bottom: 20%;
+    top: 6%;
+    right: 87px;
 
 }
 
@@ -227,7 +310,7 @@ main #profile{
      top: 0;
      width: 100%;
      height: 80vh;
-     background: rgb(255, 255, 255);
+     background: #ECF0F3;
      margin-top: -20px;
      margin-bottom: -20px;
  }
@@ -241,8 +324,53 @@ main #profile{
      color: #0c1154;
  }
 
+#about .download div{
+    width: 49px;
+    height: 49px;
+    border-radius: 55px;
+    background-color: #f1b216;
+    margin-top: -10px;
+    margin-left: -22px;
+}
+
+.download .text{
+    font-size: 16px;
+    padding: 10px;
+    margin-top: -4px;
+    margin-left: -22px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+#about .download div i{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+#about .download {
+    display: flex;
+    gap: 27px;
+    width: 185px;
+    height: 56px;
+    background: #0c1154;
+    box-shadow: 28px 28px 50px rgba(151, 153, 155, 0.36);
+    border-radius: 46px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 14px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
 .profile2 {
-    width: 500px;
+    width: 520px;
     height: 500px;
     background-size: cover;
     position: relative;
@@ -287,59 +415,7 @@ main #profile{
 }
 
 
-.wrapper .button{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0 5px;
-    overflow: hidden;
-    background: rgba(236, 240, 243, 0.85);
-    box-shadow: 1px -1px 5px #FFFFFF, 10px 10px 10px rgba(0,0,0,0.1);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    /*margin-left: 20px;
-    margin-top: 20px;*/
-    margin-top: -53px;
-    margin-left: -97px;
-}
-.wrapper .button:hover{
-    width: 200px;
-}
-.wrapper .button .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1):hover .icon{
-    background: #FFA500;
-}
 
-.wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i{
-    color: #fff;
-}
-.wrapper .button span{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 60px;
-    margin-left: 10px;
-    transition: all 0.3s ease-out;
-
-}
-.wrapper .button:nth-child(1) span{
-    color: #0c1154;
-}
 
 /*-------------------education section-------------------*/
 
@@ -347,7 +423,7 @@ main #profile{
     width: 100%;
     height: 150vh;
     /*border: 2px dashed black;*/
-    background-color: #f3f1ec;
+    background-color: #ECF0F3;
     margin-top: -20px;
     margin-bottom: 20px;
 }
@@ -461,7 +537,7 @@ main #education section:nth-child(2)>section>div>h4:nth-child(2) {
     font-size: 20px;
     text-align: center;
     color: #000000;
-    padding: 5px;
+    padding: 7px;
 }
 
 /**
@@ -492,7 +568,7 @@ main #gallery {
     position: relative;
     width: 100%;
     height: 106vh;
-    background: #f3ecec;
+    background: #ECF0F3;
     top: 100%;
     margin-top: -20px;
 
@@ -520,6 +596,18 @@ main #gallery section:first-child h1 {
     padding-bottom: 20px;
     padding-top: 20px;
     color: #0c1154;
+}
+
+main #gallery section:first-child h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 159px;
+    height: 6px;
+    background: #0c1154;
+    bottom: -88px;
+    left: calc(50% - 160px);
+    border-radius: 3px;
 }
 
 main #gallery section:nth-child(2) {
@@ -690,7 +778,7 @@ main .skills {
 
 }
 
-.skills>h2{
+.skills>h1{
     font-family: Ubuntu, sans-serif;
     font-size: 50px;
     text-align: center;
@@ -699,6 +787,18 @@ main .skills {
     padding-bottom: 20px;
     padding-top: 20px;
     color: #f3f1ec;
+}
+
+.skills>h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 6px;
+    background: #ffffff;
+    bottom: 196px;
+    left: calc(50% - 128px);
+    border-radius: 3px;
 }
 
 #skillsCube {
@@ -729,7 +829,7 @@ main>section:nth-child(4)>section:nth-child(3) {
 
 .slider {
     height: 100px;
-    margin: 70px;
+    margin: 51px;
     overflow: hidden;
     position: relative;
     width: max-content;
@@ -771,7 +871,7 @@ main #projects{
     width: 100%;
     height: 110vh;
     margin-top: 0px;
-    background: rgba(54, 121, 27, 0.4);
+    background: /*rgba(54, 121, 27, 0.4)*/ #ECF0F3;
 ;
 
 }
@@ -940,6 +1040,19 @@ main #projects section:nth-child(2) {
     border-radius: 51px;
     /*justify-content: center;
     margin-left: 67px;*/
+    transition: all 0.5s ease;
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.68);
+    cursor: pointer;
+}
+
+.card-thumb img:hover{
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+
+
 }
 
 
@@ -1057,14 +1170,15 @@ main #projects section:nth-child(2) {
 
 #contact{
     background-color: #ECF0F3;
+    margin-top: -41px;
 }
 
 #contact form {
-    padding: 50px;
+    padding: 40px;
 }
 
 #contact aside {
-    padding: 50px;
+    padding: 30px;
     background: #e7b609;
 }
 
@@ -1078,6 +1192,18 @@ main #projects section:nth-child(2) {
     /*padding-bottom: 18px;*/
 }
 
+.heading_text h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 162px;
+    height: 6px;
+    background: #0c1154;
+    bottom: 710px;
+    left: calc(50% - 190px);
+    border-radius: 3px;
+}
+
 /* Target the form */
 #contact #contact_form {
     display: flex;
@@ -1085,9 +1211,23 @@ main #projects section:nth-child(2) {
     background: #ECF0F3;
     position: relative;
     margin: 50px;
-
     box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
+
+}
+
+#contact #contact_form h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: #0c1154;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+#contact #contact_info:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
 }
 
 /* Target the labels and inputs inside the form */
@@ -1104,25 +1244,114 @@ main #projects section:nth-child(2) {
     margin-bottom: 20px;
 }
 
-#contact #contact_form textarea {
+ textarea {
     height: 150px;
 }
+.container{
+    text-align: center;
+    margin-top: 360px;
+}
+#contact #contact_form .btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1,.btn2{
+    color: #3498db;
+}
+.btn3,.btn4{
+    color: #fff;
+}
+.btn1:hover,.btn2:hover{
+    color: #fff;
+}
+.btn3:hover,.btn4:hover{
+    color: #3498db;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before,.btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn3::before,.btn4::before{
+    height: 180%;
+}
+.btn1:hover::before,.btn2:hover::before{
+    height: 180%;
+}
+.btn3:hover::before,.btn4:hover::before{
+    height: 0%;
+}
+
 
 #contact #contact_form button[type="submit"] {
-    background-color: #242944;
+    background-color: #0c1154;
     border-bottom: #e7b609 2px solid;
     border-right: none;
     border-top: none;
     border-left: none;
     color: #fff;
     padding: 10px 20px;
-    /*border: none;*/
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 25px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact #contact_form button::before{
+    background-color: #0c1154;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+#contact #contact_form button:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+#contact #contact_form button::before{
+    height: 50%;
+}
+
+#contact #contact_form button::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+#contact #contact_form button:hover{
+    color: #e7b609;
 }
 
 #contact_form button[type="submit"] a, #contact_form button[type="submit"] i {
@@ -1154,9 +1383,7 @@ textarea {
     overflow: auto;
 }
 
-#contact #contact_form button[type="submit"]:hover {
-    background-color: #242944;
-}
+
 
 
 /* Target the aside */
@@ -1176,10 +1403,14 @@ textarea {
 
 #contact #contact_info h3{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color: #0c1154;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+#contact #contact_info pre{
+    font-family: 'Ubuntu', sans-serif;
 }
 
 main>section:nth-child(3)>section:nth-child(2)>section>div {
