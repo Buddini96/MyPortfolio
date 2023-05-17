@@ -1597,4 +1597,21 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 }
 
 
+/*--------------------------------Web Development Page----------------------------------*/
+
+#portfolio .navigation1 .text{
+    font-family: Poppins, sans-serif;
+    alignment: center;
+    color: #0e69f2;
+    font-size: 30px;
+}
+
+#portfolio .navigation1{
+    display: flex;
+}
+
+#portfolio {
+    background-color: #83a2ff;
+}
+
 
