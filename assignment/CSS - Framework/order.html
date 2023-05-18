@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <script src="assests/js/bootstrap.js"></script>
+
+</head>
+
+<style>
+    .banner-image {
+        background-image: url('assests/img/cover.jpg');
+        background-size: cover;
+    }
+
+    form{
+        width: 304px;
+        height: 326px;
+        /* padding: 22px; */
+        margin-left: -174px;
+        margin-right: 56px;
+    }
+
+    table{
+        width: 100px;
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: -436px;
+        left: 30px;
+        margin-left: 34px;
+    }
+
+    .btns{
+        margin-right: -88px;
+        margin-top: 326px;
+        /* background-color: #ef3434; */
+        position: relative;
+        display: flex;
+        left: -715px;
+    }
+
+</style>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+        <a class="navbar-brand" href="#">POS SYSTEM</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Place Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div
+        class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+        <!--<h1 class="text-white">POS SYSTEM</h1>-->
+    </div>
+
+    <h2 class="topic">Order Management</h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">"Qty</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <div class="btns">
+        <button type="button" class="btn btn-primary">Clear</button>
+        <button type="button" class="btn btn-warning">Update</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
