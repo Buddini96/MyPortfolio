@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Designing</title>
+  <!-- Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="keyword" content="IJSE, GDSE, Portfolio, Developer">
+  <meta name="description" content="This is for testing My Portfolio">
+  <meta content="author" name="Buddini Pathinayaka">
+  <meta content="owner" name="Buddini Pathinayaka">
+  <meta content="width=device-width initial-scale=1" name="viewport">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
+  <link rel="stylesheet" href="assests/css/normalize.css">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="icon" href="assests/img/ui.png">
+
+  <style>
+
+    .container h1{
+      font-family: Ubuntu, sans-serif;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 7px;
+      padding-bottom: 18px;
+      color: #0c1154;
+    }
+
+    .container h1::after{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 238px;
+      height: 6px;
+      background: #0c1154;
+      /* bottom: 10px; */
+      top: 142px;
+      left: calc(50% - 351px);
+      border-radius: 3px;
+    }
+
+    .container h4{
+      font-family: Ubuntu, sans-serif;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 27px;
+      margin-bottom: 18px;
+      padding-bottom: 26px;
+      color: #FFA500;
+    }
+
+    :root{
+      --clr: #ECF0F3;
+    }
+
+    .navigation{
+      /*display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin-top: -289px;*/
+
+      width: 473px;
+      height: 70px;
+      background: #0c1154;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-family: 'Abril Fatface', cursive;
+      top: 25px;
+    }
+
+    .navigation ul{
+      display: flex;
+      width: 400px;
+      margin-left: inherit;
+    }
+
+    .navigation ul li{
+      position: relative;
+      list-style: none;
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+    }
+
+    .navigation ul li a {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .navigation ul li.active a .icon{
+
+    }
+
+    .navigation ul li a .icon{
+      position: relative;
+      display: block;
+      line-height: 75px;
+      font-size: 1.5em;
+      text-align: center;
+      transition: 0.5s;
+      color: #ECF0F3;
+      --clr: #ECF0F3;
+      left: 5px;
+    }
+
+    /*.navigation ul li a .icon::after{
+        color: black;
+    }*/
+
+    .navigation ul li.active a .icon{
+      transform: translateY(-32px);
+      color: black;
+    }
+
+    .navigation ul li a .text{
+      position: absolute;
+      color: var(--clr);
+      font-weight: 400;
+      font-size: 0.75em;
+      letter-spacing: 0.05em;
+      transition: 0.5s;
+      opacity: 0;
+      transform: translateY(20px);
+      top: 38px;
+
+    }
+
+    .navigation ul li.active a .text{
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    #portfolio {
+      background-color: #ECF0F3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-top: -182px;
+      margin-bottom: -103px;
+    }
+
+    .indicator{
+      position: absolute;
+      top: -50%;
+      width: 70px;
+      height: 70px;
+      background: #FFA500;
+      border-radius: 50%;
+      border: 6px solid var(--clr);
+      transition: 0.5s;
+    }
+
+    .indicator::before{
+      content: "";
+      position: absolute;
+      top: 42%;
+      left: -22px;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 1px -10px 0 0 var(--clr);
+    }
+
+    .indicator::after{
+      content: "";
+      position: absolute;
+      top: 42%;
+      right: -22px;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-left-radius: 20px;
+      box-shadow: -1px -10px 0 0 var(--clr);
+    }
+
+    .navigation ul li:nth-child(1).active ~ .indicator {
+      transform: translateX(calc(70px * 0));
+    }
+
+    .navigation ul li:nth-child(2).active ~ .indicator {
+      transform: translateX(calc(70px * 1));
+    }
+
+    .navigation ul li:nth-child(3).active ~ .indicator {
+      transform: translateX(calc(70px * 2));
+    }
+
+    .navigation ul li:nth-child(4).active ~ .indicator {
+      transform: translateX(calc(70px * 3));
+    }
+    .navigation ul li:nth-child(5).active ~ .indicator {
+      transform: translateX(calc(70px * 4));
+    }
+
+    .portfolio1 {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #ECF0F3;
+    }
+
+    .portfolio1 .row{
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-.5 * var(--bs-gutter-x));
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+
+    .portfolio1 .portfolio-item {
+      margin-bottom: 30px;
+      width: 30px;
+      height: auto;
+    }
+
+    .portfolio1 .portfolio-wrap {
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      left: 242px;
+      width: 258px;
+      bottom: 82px;
+      height: 206px;
+      z-index: 1;
+      box-shadow: 1px 1px 7px -3px rgb(0 0 0 / 70%);
+      border-radius: 17% 17% 17% 17%;
+    }
+
+    .portfolio1 .portfolio-wrap::before {
+      content: "";
+      background: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      top: 30px;
+      bottom: 30px;
+      transition: all ease-in-out 0.3s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .product{
+      width: 100%;
+      /*height: 100px;*/
+      padding: 0 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: #ECF0F3;
+    }
+
+    .product img{
+      width: 300px;
+      height: 300px;
+      padding: 25px;
+      /*object-fit: cover;*/
+      /*object-position: center;*/
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div id="container">
+        <h1>User Interface Designing</h1>
+        <h4>Assignments</h4>
+      </div>
+
+      <!--Navigation-->
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="text">All</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="text">CSS</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="text">Animations</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="text">Transitions</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="text">Frameworks</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </div>
+
+
+  </section>
+
+  <div class="product">
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
+    <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
+  </div>
+
+
+
+</main>
+<script>
+  const list = document.querySelectorAll('.list');
+  function activeLink(){
+    list.forEach((item) =>
+            item.classList.remove('active'));
+    this.classList.add('active');
+  }
+
+  list.forEach((item) =>
+          item.addEventListener('click' , activeLink));
+</script>
+<!--<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
+</body>
+</html>
+
+</head>
+<body>
+
+</body>
+</html>
