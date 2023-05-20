@@ -2,59 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case Five Animations</title>
+    <title>Slide Show Using CSS</title>
     <link rel="stylesheet" href="assests/normalize.css">
 
     <style>
-        body{
-            margin: 0;
-            padding: 0;
+        main {
             width: 100vw;
             height: 100vh;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             overflow: hidden;
         }
-        body>section{
-            animation: slider 10s infinite alternate;
-            animation-delay: 2s;
-            position: relative;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: 500%;
-            display: inline-block;
-        }
 
-        body>section>section{
+        main > section {
+            width: calc(100% * 5);
             height: 100%;
-            width: 100vw;
-            display: inline-block;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
-        body>section>section>img{
-            width: 100%;
+        main > section > div {
             height: 100%;
-            object-fit: cover;
+            flex-grow: 1;
         }
 
-        body>section>section:nth-child(5){
-            width: 98vw;
+        main > section > div:nth-child(1) {
+            background: url("assests/images/a1.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(2) {
+            background: url("assests/images/a2.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(3) {
+            background: url("assests/images/a3.jpg");
+            background-size: cover;
+            background-position: top;
+        }
+
+        main > section > div:nth-child(4) {
+            background: url("assests/images/a4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            background: url("assests/images/a5.jpg");
+            background-size: cover;
+            background-position: center;
         }
 
         @keyframes slider {
-            0%{
-                left: 0;
+            0%,15% {
+                transform: translateX(calc((-100%/5)*0));
             }
-            25%{
-                left: -100vw;
+            20%,35% {
+                transform: translateX(calc((-100%/5)*1));
             }
-            50%{
-                left: -200vw;
+            40%,55% {
+                transform: translateX(calc((-100%/5)*2));
             }
-            75%{
-                left: -300vw;
+            60%,75% {
+                transform: translateX(calc((-100%/5)*3));
             }
-            100%{
-                left: -400vw;
+            80%,100% {
+                transform: translateX(calc((-100%/5)*4));
             }
         }
 
@@ -62,109 +86,16 @@
 
 </head>
 <body>
-<section>
-    <section><img src="assests/images/a1.jpg"></section>
-    <section><img src="assests/images/a2.jpg"></section>
-    <section><img src="assests/images/a3.jpg"></section>
-    <section><img src="assests/images/a4.jpg"></section>
-    <section><img src="assests/images/a5.jpg"></section>
-</section>
+<!--main box-->
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-   <!-- <style>
-        section {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        div {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            animation: slide 16s infinite;
-            animation-direction: alternate;
-            height: 100%;
-            width: 100vw;
-            display: inline-block;
-        }
-
-        div:nth-child(1) {
-            z-index: 3;
-            background-image: url("assests/images/a2.jpg");
-            animation-delay: 0s;
-        }
-
-        div:nth-child(2) {
-            z-index: 2;
-            background-image: url("assests/images/a3.jpg");
-            animation-delay: 4s;
-
-        }
-
-        div:nth-child(3) {
-            z-index: 1;
-            background-image: url("assests/images/a4.jpg");
-            animation-delay: 8s;
-        }
-
-        div:nth-child(4) {
-            z-index: 0;
-            background-image: url("assests/images/a1.jpg");
-            animation-delay: 12s;
-        }
-
-        @keyframes slide {
-            from{
-                transform: translateX(0%);
-            }
-            to{
-                transform: translateX(100%);
-            }
-            /*0% {
-                transform: translateX(0%);
-            }
-            16.666% {
-                transform: translateX(-100%);
-            }
-            33.333% {
-                transform: translateX(-100%);
-            }
-            50% {
-                transform: translateX(-100%);
-            }
-            66.666% {
-                transform: translateX(100%);
-            }
-            83.333% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(0%);
-            }*/
-        }
-    </style>
-</head>
-<body>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
-</body>
-</html>
--->
-
