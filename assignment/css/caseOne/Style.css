@@ -1,248 +1,178 @@
 body{
-    margin: 0;
+    border: 1px solid black;
 }
-
-#sec1{
-    position: absolute;
-    border: 5px solid black;
-    width: 98%;
-    height: 47%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-#sec2{
-    position: absolute;
-    border-bottom: 5px solid grey;
-    border-left: 5px solid grey;
-    border-right: 5px solid grey;
-    width: 98%;
-    height: 48.1%;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    bottom: 0;
-}
-
-.div1{
-    background-color: red;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-}
-
-.div2{
-    background-color: green;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.div3{
-    background-color: yellow;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-}
-
-.div4{
-    background-color: deeppink;
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    right: 0%;
-    bottom: 0;
-}
-
-.circle1{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.circle2{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.circle3{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.circle4{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.square1{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.square2{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.square3{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.square4{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.centerSquare{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
-
-.centerCircle{
-    background-color: red;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.leftCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+section{
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    left: -7%;
-    top: -29%;
+    /*border: 1px solid black;*/
 }
 
-.rightCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+section>div:first-child{
+    width: 50%;
+    height: 50%;
     position: absolute;
-    right: -8%;
-    top: -33%;
-}
-
-.bottomLeftCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    left: -8%;
-    bottom: -31%;
-}
-
-.bottomRightCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    right: -8%;
-    bottom: -28%;
-}
-
-.topCenterCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: absolute;
-    top: -15%;
     left: 0;
+}
+
+section>div:nth-child(2){
+    width: 50%;
+    height: 50%;
+    position: absolute;
     right: 0;
+}
+
+section>div:nth-child(3){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+section>div:nth-child(4){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+section>div:nth-child(5){
+    border-bottom-right-radius: 100px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+}
+
+section>div:nth-child(6){
+    border-bottom-left-radius: 100px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 0;
+}
+
+section>div:nth-child(7){
+    border-top-right-radius: 100px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+section>div:nth-child(8){
+    border-top-left-radius: 100px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+}
+
+section>div:nth-child(9){
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
     margin: auto;
 }
 
-.bottomCenterCircle{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+section>div:nth-child(10){
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
     position: absolute;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: -70px;
+    margin: auto;
+}
+
+section>div:nth-child(11){
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    width: 70px;
+    height: 140px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+section>div:nth-child(12){
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-color: white;
+    left: -70px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+section>div:nth-child(13){
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    height: 120px;
     left: 0;
     right: 0;
-    bottom: -15%;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+section>div:nth-child(14){
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: red;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.insideCircle{
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.insideRectangle{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: red;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     margin: auto;
 }
