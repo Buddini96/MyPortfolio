@@ -41,7 +41,7 @@
             background: #0c1154;
             /* bottom: 10px; */
             top: 142px;
-            left: calc(50% - 351px);
+            left: calc(50% - 273px);
             border-radius: 3px;
         }
 
@@ -81,7 +81,8 @@
         .navigation ul{
             display: flex;
             width: 400px;
-            margin-left: inherit;
+            margin-left: -20px;
+            margin-right: 20px;
         }
 
         .navigation ul li{
@@ -116,7 +117,7 @@
             transition: 0.5s;
             color: #ECF0F3;
             --clr: #ECF0F3;
-            left: 5px;
+
         }
 
         /*.navigation ul li a .icon::after{
@@ -152,7 +153,7 @@
             align-items: center;
             height: 100vh;
             margin-top: -182px;
-            margin-bottom: -103px;
+            margin-bottom: -244px;
         }
 
         .indicator{
@@ -276,6 +277,104 @@
             /*object-fit: cover;*/
             /*object-position: center;*/
         }
+
+        *,*:after,*:before{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .card{
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            margin:0;
+            background: #ECF0F3;
+            display: flex;
+            align-items: center;
+            /*justify-content: space-around;*/
+            min-height: 100vh;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+        }
+        .card img{
+            max-width: 100%;
+        }
+        .card .ui-card{
+            width: 350px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            background: radial-gradient(#111 50%, #000 100%);
+            display: flex;
+            /* padding-bottom: 103px; */
+            margin-bottom: 30px;
+            border-radius: 10%;
+            /*margin-left: 14px;
+            margin-right: 14px;*/
+        }
+
+        .card .ui-card img{
+            transform: scale(1.3);
+            transition: all 0.3s ease-out;
+        }
+        .card .ui-card:hover img{
+            transform: scale(1.1) translateY(-20px);
+            opacity: 0.3
+        }
+        .card .ui-card .description{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+        .card .ui-card .description h3{
+            font-weight: 700;
+            font-size: 32px;
+            margin: 0 0 20px;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+
+        }
+        .card .ui-card .description p{
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out 0.2s;
+        }
+        .card .ui-card .description a{
+            color: #fff;
+            background: #FFA500;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.3s ease-out 0.4s;
+        }
+        .card .ui-card .description a:hover{
+            background:#0c1154;
+        }
+        .card .ui-card:hover .description h3{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .card .ui-card:hover .description p{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .card .ui-card:hover .description a{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
     </style>
 </head>
 <body>
@@ -300,25 +399,25 @@
                     <li class="list">
                         <a href="#">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="text">CSS</span>
+                            <span class="text">Standalone</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="text">Animations</span>
+                            <span class="text">Java</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="text">Transitions</span>
+                            <span class="text">Python</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
                             <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="text">Frameworks</span>
+                            <span class="text">Hibernate</span>
                         </a>
                     </li>
                     <div class="indicator"></div>
@@ -329,19 +428,43 @@
 
     </section>
 
-    <div class="product">
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="">
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
-        <img src="assests/img/css-assigment-1.jpg" class="img-fluid" alt="" >
-    </div>
+    <section class="card">
+        <div class="ui-card">
+            <img src="assests/img/cloud.jpg">
+            <div class="description">
+                <h3>Cosmetics Shop Management System</h3>
+                <p> Standalone Software Application Cosmetics Shop Management System Using MVC Architecture</p>
+                <a href=#">View</a>
+            </div>
+        </div>
+        <div class="ui-card">
+            <img src="assests/img/cloud.jpg">
+            <div class="description">
+                <h3>D24 Hostal Management System</h3>
+                <p>D24 Hostal Management System Using Hibernate Technology</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+        <div class="ui-card">
+            <img src="assests/img/cloud.jpg">
+            <div class="description">
+                <h3>Connect 4 Game</h3>
+                <p>Connect 4 Game - Standalone Application</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+
+        <div class="ui-card">
+            <img src="assests/img/cloud.jpg">
+            <div class="description">
+                <h3>Student Management System</h3>
+                <p>Student Management System - Standalone Application</p>
+                <a href="#">View</a>
+            </div>
+        </div>
 
 
-
+    </section>
 </main>
 <script>
     const list = document.querySelectorAll('.list');
@@ -356,10 +479,5 @@
 </script>
 <!--<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
-</body>
-</html>
-</head>
-<body>
-
 </body>
 </html>
