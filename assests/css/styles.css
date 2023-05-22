@@ -225,13 +225,30 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
     font-size: 40px;
 }
 
+.blob1{
+    margin-left: -240px;
+    margin-top: -20px;
+}
+
+.blob2{
+    position: absolute;
+    left: -236px;
+    top: -278px;
+}
+
+.blob3{
+    position: absolute;
+    right: -251px;
+    top: 346px;
+}
+
 
 #dev1{
-    color:#0c1154
+    color:#0c1154;
 }
 
 #dev2{
-    color: #FFA500
+    color: #FFA500;
 }
 
 main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
@@ -447,6 +464,14 @@ main #education section:first-child>h1 {
     margin-bottom: 7px;
     padding-bottom: 18px;
     color: #0c1154;
+}
+
+.blob5{
+    position: absolute;
+    right: 30px;
+    left: 1308px;
+    /* margin-bottom: 22px; */
+    margin-top: -116px;
 }
 
 main #education section:first-child>h1::after {
@@ -1171,6 +1196,32 @@ main #projects section:nth-child(2) {
 #contact{
     background-color: #ECF0F3;
     margin-top: -41px;
+}
+
+.wave{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.wave3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.wave4{
+    position: absolute;
+    right: 0px;
+    left: 481px;
+    top: 0px;
+}
+
+.wave1{
+    position: absolute;
+    left: 521px;
+    bottom: -3px;
+    right: 0;
 }
 
 #contact form {
