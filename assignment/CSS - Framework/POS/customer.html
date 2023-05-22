@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
     <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
     <script src="assests/js/bootstrap.js"></script>
 
 </head>
@@ -16,32 +17,12 @@
         background-size: cover;
     }
 
-    form{
-        width: 304px;
-        height: 326px;
-        /* padding: 22px; */
-        margin-left: -174px;
-        margin-right: 56px;
-    }
-
-    table{
-        width: 100px;
-        height: 200px;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-top: -436px;
-    }
-
-
-
 </style>
+
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
-        <a class="navbar-brand" href="#">POS SYSTEM</a>
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i> POS SYSTEM</a>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -84,9 +65,9 @@
             <!--<h1 class="text-white">POS SYSTEM</h1>-->
         </div>
 
-        <h2 class="topic">Customer Management</h2>
+        <!--<h2 class="topic">Customer Management</h2>-->
 
-        <div class="row">
+        <!--<div class="row">
             <div class="col-4">
                 <form>
                     <div class="mb-3">
@@ -145,7 +126,110 @@
                 </tbody>
             </table>
         </div>
-    </div>
+    </div>-->
+        <main class="container">
+            <section class="row p-4 m-0 object-fit-contain" id="customer">
+                <h2 class="text-body pt-5 m-lg-2 tex">Manage Customers</h2>
+                <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
+                    <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
+                    <form>
+                        <div class="form-floating mb-3 mt-2">
+                            <input type="text" class="form-control" id="cid" placeholder="Id">
+                            <label for="cid">Id</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                            <label for="Name">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="Address" placeholder="Address">
+                            <label for="Address">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="contact" placeholder="Contact">
+                            <label for="contact">Contact</label>
+                        </div>
+                    </form>
+
+                    <div class="col-8 ms-5">
+                        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
+                        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                    </div>
+
+                </section>
+
+                <section  class="col-12 col-sm-12 col-md-12 col-lg-7 " >
+                    <h5 class="text-dark text-center m-lg-3 pb-3" >Customer Details</h5>
+                    <table class="table table-light table-striped">
+                        <thead>
+                        <tr>
+                            <th style="background-color: #76a9d0" scope="col">Id</th>
+                            <th style="background-color: #76a9d0" scope="col">Name</th>
+                            <th style="background-color: #76a9d0" scope="col">Address</th>
+                            <th style="background-color: #76a9d0" scope="col">Contact</th>
+                            <th style="background-color: #76a9d0" scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">C001</th>
+                            <td>Kamal</td>
+                            <td>Galle</td>
+                            <td>0772356600</td>
+                            <td>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C002</th>
+                            <td>Nimal</td>
+                            <td>Matara</td>
+                            <td>0778000039</td>
+                            <td>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C003</th>
+                            <td>Nirmala</td>
+                            <td>Colombo</td>
+                            <td>0778956324</td>
+                            <td>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C004</th>
+                            <td>Kasun</td>
+                            <td>Matara</td>
+                            <td>0770123000</td>
+                            <td>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C005</th>
+                            <td>Sachin</td>
+                            <td>Galle</td>
+                            <td>0778050000</td>
+                            <td>
+                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+        </main>
     </div>
 
 

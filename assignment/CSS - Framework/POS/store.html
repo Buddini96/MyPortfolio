@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
     <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
     <script src="assests/js/bootstrap.js"></script>
 
 </head>
@@ -16,34 +17,12 @@
         background-size: cover;
     }
 
-    form{
-        width: 304px;
-        height: 326px;
-        /* padding: 22px; */
-        margin-left: -217px;
-        margin-right: 56px;
-    }
-
-    table{
-        width: 100px;
-        height: 200px;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-top: -436px;
-    }
-
-
-
-
 
 </style>
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
-        <a class="navbar-brand" href="#">POS SYSTEM</a>
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i> POS SYSTEM</a>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -86,69 +65,108 @@
         <!--<h1 class="text-white">POS SYSTEM</h1>-->
     </div>
 
-    <h2 class="topic">Store Management</h2>
+    <main class="container">
+        <section class="row p-4 m-0 object-fit-contain" id="Items">
+            <h2 class="text-body pt-5 m-lg-2">Manage Items</h2>
+            <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
+                <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
+                <form>
+                    <div class="form-floating mb-3 mt-2">
+                        <input type="text" class="form-control" id="Iid" placeholder="Id">
+                        <label for="Iid">Item id</label>
+                    </div>
 
-    <div class="row">
-        <div class="col-4">
-            <form>
-                <div class="mb-3">
-                    <label for="code" class="form-label">Code</label>
-                    <input type="text" class="form-control" id="code">
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="price" class="form-label">Price</label>
-                    <input type="text" class="form-control" id="price">
-                </div>
-                <div class="mb-3">
-                    <label for="qty" class="form-label">Qty</label>
-                    <input type="number" class="form-control" id="qty">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
+                        <label for="ItemDesc">Description</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="UPrice" placeholder="Address">
+                        <label for="UPrice">Unit Price</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="Qty" placeholder="Contact">
+                        <label for="Qty">Quantity</label>
+                    </div>
+                </form>
+
+                <div class="col-8 ms-5">
+                    <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
+                    <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
                 </div>
 
-                <button type="button" class="btn btn-success">Add</button>
-                <button type="button" class="btn btn-primary">Clear</button>
-                <button type="button" class="btn btn-warning">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+            </section>
 
-            </form>
-        </div>
-
-        <div class="col-6">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Code</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Qty</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+            <section class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                <h5 class="text-dark text-center m-lg-3 pb-3" >Item Details</h5>
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th style="background-color: #76a9d0" scope="col">Item Id</th>
+                        <th style="background-color: #76a9d0" scope="col">Description</th>
+                        <th style="background-color: #76a9d0" scope="col">Unit Price</th>
+                        <th style="background-color: #76a9d0" scope="col">Quantity</th>
+                        <th style="background-color: #76a9d0" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Dhal</td>
+                        <td>600.00</td>
+                        <td>20</td>
+                        <td>
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I002</th>
+                        <td>Soap</td>
+                        <td>220.00</td>
+                        <td>50</td>
+                        <td>
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I003</th>
+                        <td>Shampoo</td>
+                        <td>900.00</td>
+                        <td>10</td>
+                        <td>
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I004</th>
+                        <td>Biscuts</td>
+                        <td>300.00</td>
+                        <td>40</td>
+                        <td>
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I005</th>
+                        <td>Milk</td>
+                        <td>700.00</td>
+                        <td>10</td>
+                        <td>
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
 </div>
 </body>
 </html>

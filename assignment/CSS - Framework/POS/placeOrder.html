@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
     <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
     <script src="assests/js/bootstrap.js"></script>
 
 </head>
@@ -16,37 +17,12 @@
         background-size: cover;
     }
 
-    form{
-        width: 304px;
-        height: 326px;
-        /* padding: 22px; */
-        margin-left: -174px;
-        margin-right: 56px;
-    }
-
-    table{
-        width: 100px;
-        height: 200px;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-top: -436px;
-    }
-
-    .container1 {
-        width: 300px;
-        left: 30px;
-    }
-
-
 
 </style>
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
-        <a class="navbar-brand" href="#">POS SYSTEM</a>
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i>OS SYSTEM</a>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -89,106 +65,177 @@
         <!--<h1 class="text-white">POS SYSTEM</h1>-->
     </div>
 
-    <h2 class="topic">Place Order</h2>
+    <main class="container-fluid">
+
+        <h2 style="color: black" class="mt-2 mb-0 text-center">Place Order</h2>
+
+        <section class="row  p-0">
+            <form action="">
+                <div class="row mt-5 mb-2 p-3 ">
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Order ID</span>
+                            <input class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Date</span>
+                            <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">CustomerID</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select ID</option>
+                                <option value="1">C001</option>
+                                <option value="2">C002</option>
+                                <option value="3">C003</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Customer Name</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-2 mb-2 p-3 ">
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Item ID</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select ID</option>
+                                <option value="1">I001</option>
+                                <option value="2">I002</option>
+                                <option value="3">I003</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Description</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Qty On Hand</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Unit Price</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Quantity</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-10"></div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                        <button type="button" class="btn btn-warning">Clear <i class="fa-solid fa-broom"></i></button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="row mt-3 p-3">
+            <div class="row">
+                <table class="table table-light table-striped">
+                    <thead>
+                    <tr>
+                        <th style="background-color: #76a9d0" scope="col">Item ID</th>
+                        <th style="background-color: #76a9d0" scope="col">Description</th>
+                        <th style="background-color: #76a9d0" scope="col">Qty</th>
+                        <th style="background-color: #76a9d0" scope="col">Unit Price</th>
+                        <th style="background-color: #76a9d0" scope="col">Total</th>
+                        <th style="background-color: #76a9d0" scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="col">I001</th>
+                        <th scope="col">Milk</th>
+                        <th scope="col">2</th>
+                        <th scope="col">2000.00</th>
+                        <th scope="col">4000.00</th>
+                        <th scope="col">
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">I002</th>
+                        <th scope="col">Rice</th>
+                        <th scope="col">10</th>
+                        <th scope="col">2200.00</th>
+                        <th scope="col">2200.00</th>
+                        <th scope="col">
+                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </th>
+                    </tr>
 
 
-    <section class="container1">
-        <form class="row g-3 p-3">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Order Id</label>
-                <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-            </div>
-            <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Date</label>
-                <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-            </div>
 
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Customer Id</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                    </tbody>
+                </table>
             </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Customer Name</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">code</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Name</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Price</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Qty</label>
-                <input type="text" class="form-control" id="qty">
-            </div>
+            <form action="">
+                <div class="row mt-3">
 
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Total</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
 
-            <div class="col-12">
-                <button type="button" class="btn btn-success">Add</button>
-                <button type="button" class="btn btn-danger">Cancel</button>
-                <button type="button" class="btn btn-warning">Place Order</button>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Discount</span>
+                            <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                        </div>
+                    </div>
 
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Sub Total</span>
+                            <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success">Purchase</button>
+                    <button type="button" class="btn btn-danger">Cancel</button>
+                </div>
             </div>
-        </form>
-    </section>
-
-    <div class="col-7">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">Order Id</th>
-                <th scope="col">Code</th>
-                <th scope="col">Qty</th>
-                <th scope="col">price</th>
-                <th scope="col">total</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@fat</td>
-            </tr>
-
-            </tbody>
-        </table>
-    </div>
+        </section>
+    </main>
 </div>
 
 

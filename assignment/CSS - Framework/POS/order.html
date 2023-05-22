@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
     <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="assests/fonts-awesome/css/all.min.css">
     <script src="assests/js/bootstrap.js"></script>
 
 </head>
@@ -16,41 +17,12 @@
         background-size: cover;
     }
 
-    form{
-        width: 304px;
-        height: 326px;
-        /* padding: 22px; */
-        margin-left: -174px;
-        margin-right: 56px;
-    }
-
-    table{
-        width: 100px;
-        height: 200px;
-    }
-
-    h2 {
-        font-size: 30px;
-        font-family: 'Ubuntu', sans-serif;
-        margin-top: -436px;
-        left: 30px;
-        margin-left: 34px;
-    }
-
-    .btns{
-        margin-right: -88px;
-        margin-top: 326px;
-        /* background-color: #ef3434; */
-        position: relative;
-        display: flex;
-        left: -715px;
-    }
 
 </style>
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
-        <a class="navbar-brand" href="#">POS SYSTEM</a>
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i> POS SYSTEM</a>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -93,44 +65,104 @@
         <!--<h1 class="text-white">POS SYSTEM</h1>-->
     </div>
 
-    <h2 class="topic">Order Management</h2>
-
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Code</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">"Qty</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
-        </tbody>
-
-    </table>
-    <div class="btns">
-        <button type="button" class="btn btn-primary">Clear</button>
-        <button type="button" class="btn btn-warning">Update</button>
-        <button type="button" class="btn btn-danger">Delete</button>
-
-    </div>
+    <main class="container">
+        <h2 class="text-body pt-5 m-lg-2 pb-3">Manage Orders</h2>
+        <table class="table table-light table-striped">
+            <thead>
+            <tr>
+                <th style="background-color: #76a9d0" scope="col">Order ID</th>
+                <th style="background-color: #76a9d0" scope="col">Date</th>
+                <th style="background-color: #76a9d0" scope="col">Customer ID</th>
+                <th style="background-color: #76a9d0" scope="col">Item ID</th>
+                <th style="background-color: #76a9d0" scope="col">Quantity</th>
+                <th style="background-color: #76a9d0" scope="col">Discount</th>
+                <th style="background-color: #76a9d0" scope="col">Total</th>
+                <th style="background-color: #76a9d0" scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="col">O001</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">4</th>
+                <th scope="col">400.00</th>
+                <th scope="col">5000.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col">O002</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">5</th>
+                <th scope="col">300.00</th>
+                <th scope="col">1800.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col">O003</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">2</th>
+                <th scope="col">100.00</th>
+                <th scope="col">2000.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col">O004</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">2</th>
+                <th scope="col">100.00</th>
+                <th scope="col">1900.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col">O005</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">2</th>
+                <th scope="col">100.00</th>
+                <th scope="col">1900.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            <tr>
+                <th scope="col">O006</th>
+                <th scope="col">2023-05-25</th>
+                <th scope="col">C001</th>
+                <th scope="col">I001</th>
+                <th scope="col">2</th>
+                <th scope="col">100.00</th>
+                <th scope="col">1900.00</th>
+                <th scope="col">
+                    <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+    </main>
 
 
 </div>
