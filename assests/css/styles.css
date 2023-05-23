@@ -80,6 +80,7 @@ header > h1 {
     text-decoration: none;
     transition: 0.3s all;
     color: #0c1154;
+    font-size: 19px;
 }
 
 main {
@@ -234,12 +235,6 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
     position: absolute;
     left: -236px;
     top: -278px;
-}
-
-.blob3{
-    position: absolute;
-    right: -251px;
-    top: 346px;
 }
 
 
@@ -431,7 +426,11 @@ main #profile{
     color: rgba(14, 14, 14, 0.71) !important;
 }
 
-
+.blob3{
+    position: absolute;
+    right: -213px;
+    top: 263px;
+}
 
 
 /*-------------------education section-------------------*/
@@ -516,6 +515,51 @@ main #education section:first-child>h1::after {
     width: 30px;
     height: 30px;
 
+}
+
+.eduImg img:nth-child(1){
+    position: relative;
+    width: 50%;
+    height: 85%;
+    top: -180px;
+    left: -655px;
+    border-radius: 38px;
+}
+
+.eduImg img:nth-child(2){
+    position: relative;
+    width: 55%;
+    height: 85%;
+    top: -492px;
+    left: -443px;
+    border-radius: 38px;
+}
+
+.eduImg img:nth-child(3){
+    position: relative;
+    width: 55%;
+    height: 85%;
+    top: -803px;
+    left: -208px;
+    border-radius: 38px;
+}
+
+.eduImg img:nth-child(4){
+    position: relative;
+    width: 55%;
+    height: 85%;
+    top: -1109px;
+    left: 23px;
+    border-radius: 38px;
+}
+
+.eduImg img:nth-child(5){
+    position: relative;
+    width: 55%;
+    height: 85%;
+    top: -1406px;
+    left: 249px;
+    border-radius: 38px;
 }
 
 .arrowImg img:nth-child(1){
@@ -622,6 +666,7 @@ main #gallery section:first-child h1 {
     padding-top: 20px;
     color: #0c1154;
 }
+
 
 main #gallery section:first-child h1::after {
     content: "";
@@ -1255,7 +1300,6 @@ main #projects section:nth-child(2) {
     border-radius: 3px;
 }
 
-/* Target the form */
 #contact #contact_form {
     display: flex;
     flex-direction: column;
