@@ -95,6 +95,7 @@ main #home {
     width: 100%;
     height: 99vh;
     margin-top: -150px;
+    padding-top: 20%;
 
 }
 
@@ -103,7 +104,7 @@ main #home section div:first-child>aside:nth-child(1) {
     display: flex;
     flex-direction: column;
     margin-left: -60px;
-    top: 6%;
+    top: 9%;
 }
 
 main #home section div:first-child>aside:nth-child(1)>h1:first-child {
@@ -228,7 +229,7 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
 
 .blob1{
     margin-left: -240px;
-    margin-top: -20px;
+    margin-top: 360px;
 }
 
 .blob2{
@@ -311,7 +312,7 @@ main #profile{
     background-size: cover;
     position: absolute;
     float: right;
-    top: 6%;
+    top: 7%;
     right: 87px;
 
 }
@@ -321,10 +322,11 @@ main #profile{
      position: relative;
      top: 0;
      width: 100%;
-     height: 80vh;
+     height: 100vh;
      background: #ECF0F3;
-     margin-top: -20px;
-     margin-bottom: -20px;
+     /* margin-top: -20px; */
+     /* margin-bottom: -20px; */
+     padding-top: 7%;
  }
 
  main #about h2 {
@@ -437,11 +439,12 @@ main #profile{
 
 #education{
     width: 100%;
-    height: 150vh;
-    /*border: 2px dashed black;*/
+    height: 152vh;
+    /* border: 2px dashed black; */
     background-color: #ECF0F3;
-    margin-top: -20px;
-    margin-bottom: 20px;
+    /* margin-top: -20px; */
+    /* margin-bottom: 20px; */
+    padding-top: 2%;
 }
 
 /**
@@ -638,10 +641,8 @@ main #gallery {
     width: 100%;
     height: 106vh;
     background: #ECF0F3;
-    top: 100%;
-    margin-top: -20px;
-
-
+    /* top: 100%; */
+    padding-top: 2%;
 }
 
 /**
@@ -939,6 +940,7 @@ main #projects{
     position: relative;
     top: 0;
     width: 100%;
+    padding-top: 2%;
     height: 110vh;
     margin-top: 0px;
     background: /*rgba(54, 121, 27, 0.4)*/ #ECF0F3;
@@ -1240,7 +1242,8 @@ main #projects section:nth-child(2) {
 
 #contact{
     background-color: #ECF0F3;
-    margin-top: -41px;
+    /*margin-top: -41px;*/
+    padding-top: 4%;
 }
 
 .wave{
@@ -1714,6 +1717,14 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 /*--------------------------Page Responsive---------------------------------*/
 @media (max-width: 1440px) {
 
+    header {
+        position: fixed;
+        background: #ECF0F3;
+        top: 0;
+        height: 73px;
+        z-index: 999;
+    }
+
     body{
         width: 100vw;
         height: 100vh;
@@ -1754,6 +1765,11 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     .blob1 {
         margin-left: -240px;
         margin-top: -22px;
+    }
+
+    section{
+        /*width: 100vw;*/
+        /*height:100vh;*/
     }
 
 
@@ -1907,7 +1923,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     /*-------------Projects Section-----------------------*/
     main #projects section:nth-child(2) {
-        margin-left: -310px;
+       /*height: 110vh;*/
     }
 
     main #projects section:first-child {
@@ -1932,7 +1948,6 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     #contact #contact_form {
-        margin-left: -62px;
         width: 53%;
         height: 68%;
     }
