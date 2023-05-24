@@ -1762,7 +1762,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     .blob2 {
         position: absolute;
         left: -236px;
-        top: -335px;
+        top: -327px;
     }
 
     .profile2 {
@@ -1875,6 +1875,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     /*-------------Skill Section-----------------------*/
     .slider {
         width: auto;
+        margin-left: 2px;
     }
 
     .skills>h1 {
@@ -1963,6 +1964,8 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         margin-top: 0px;
         padding-top: 0;
     }
+
+
 }
 
 
