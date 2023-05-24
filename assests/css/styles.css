@@ -3,7 +3,7 @@
 header {
     position: fixed;
     background: #ECF0F3;
-    width: 100%;
+    width: 100vw;
     top: 0;
     height: 73px;
     z-index: 999;
@@ -1912,6 +1912,15 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     main #projects section:first-child {
         margin-left: -116px;
+    }
+
+    .heading_text {
+        margin-left: -225px;
+    }
+
+    .heading_text h1::after {
+        left: calc(50% - 283px);
+
     }
 
     #contact #contact_info {
