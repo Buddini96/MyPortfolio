@@ -539,7 +539,7 @@ main #education section:first-child>h1::after {
     position: relative;
     width: 55%;
     height: 85%;
-    top: -803px;
+    top: -794px;
     left: -208px;
     border-radius: 38px;
 }
@@ -1707,6 +1707,262 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
 #portfolio {
     background-color: #83a2ff;
+}
+
+
+
+/*--------------------------Page Responsive---------------------------------*/
+@media (max-width: 1440px) {
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*----------Home---------------*/
+    main #home section div:first-child>aside:nth-child(1)>h1:first-child {
+        font-size: 45px;
+        margin-top: 100px;
+        margin-left: 57px;
+        margin-bottom: 0;
+    }
+
+    .animated-text {
+        position: relative;
+        left: 34px;
+        top: 15px;
+        font-size: 56px;
+    }
+
+    .profile {
+        width: 445px;
+        height: 416px;
+        position: absolute;
+        top: 11%;
+        right: 285px;
+    }
+
+    main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
+        font-size: 23px;
+        margin-left: 59px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+        margin-left: 56px;
+    }
+
+    .blob1 {
+        margin-left: -240px;
+        margin-top: -22px;
+    }
+
+
+    /*--------------About Section----------*/
+
+    .blob2 {
+        position: absolute;
+        left: -236px;
+        top: -335px;
+    }
+
+    .profile2 {
+        width: 463px;
+        height: 445px;
+        padding-right: 2%;
+        padding-left: -1%;
+    }
+
+    .para {
+        font-size: 17px;
+        line-height: 24px;
+        margin-right: 209px;
+    }
+
+    .para1{
+        font-size: 17px;
+    }
+
+    .blob3{
+        right: 0px;
+    }
+
+    /*--------------Education Section----------------*/
+
+    main #education section:first-child>h1 {
+        padding-bottom: 7px;
+    }
+
+    #education section>div {
+        width: 266px;
+        height: 157px;
+        /* border: 2px solid black; */
+        margin-top: 13px;
+    }
+
+    main #education section:first-child>h1 {
+        margin-left: -207px;
+    }
+
+    main #education section:first-child>h1::after {
+        left: calc(50% - 288px);
+    }
+
+    #education section:nth-child(2)>section>div>h4:nth-child(2) {
+        font-size: 18px;
+    }
+
+    main #education section:nth-child(2)>section>div>p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    #education section>div:nth-child(5) {
+        margin-left: 11%;
+    }
+
+    #education section>div:nth-child(4) {
+        margin-left: 22%;
+    }
+
+    #education section>div:nth-child(3) {
+        margin-left: 34%;
+    }
+
+    #education section>div:nth-child(2) {
+        margin-left: 47%;
+    }
+
+    #education section>div:nth-child(1) {
+        margin-left: 60%;
+    }
+
+
+    .eduImg img:nth-child(1) {
+        left: -477px;
+    }
+
+    .eduImg img:nth-child(2) {
+        left: -331px;
+    }
+
+    .eduImg img:nth-child(3) {
+        left: -158px;
+    }
+
+    .eduImg img:nth-child(4) {
+        left: 31px;
+    }
+
+    .eduImg img:nth-child(5) {
+        left: 219px;
+    }
+
+    .arrowImg img:nth-child(1) {
+        right: 241px;
+    }
+
+    .arrowImg img:nth-child(2) {
+        right: 83px;
+    }
+
+    .arrowImg img:nth-child(3) {
+        right: -97px;
+    }
+
+    .arrowImg img:nth-child(4) {
+        right: -281px;
+    }
+
+    /*-------------Skill Section-----------------------*/
+    .slider {
+        width: auto;
+    }
+
+    .skills>h1 {
+        margin-left: -229px;
+    }
+
+    .skills>h1::after {
+        bottom: 218px;
+        left: calc(50% - 230px);
+    }
+
+    /*-------------Gallery Section-----------------------*/
+    main #gallery section:nth-child(2)>section:first-child {
+        width: 1032px;
+        margin-left: -208px;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(8) {
+        background-position-y: -24vh;
+    }
+
+    main #gallery section:first-child h1 {
+        margin-left: -212px;
+    }
+
+    main #gallery section:first-child h1::after {
+        left: calc(50% - 256px);
+    }
+
+    /*-------------Projects Section-----------------------*/
+    main #projects section:nth-child(2) {
+        margin-left: -310px;
+    }
+
+    main #projects section:first-child {
+        margin-left: -116px;
+    }
+
+    #contact #contact_info {
+        margin: 54px;
+        margin-left: 42px;
+        position: relative;
+        height: 70%;
+        width: 71%;
+    }
+
+    #contact #contact_form {
+        margin-left: -62px;
+        width: 53%;
+        height: 68%;
+    }
+
+    .wave1 {
+        left: 425px;
+    }
+
+    .wave4 {
+        left: 381px;
+    }
+
+    .wave3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .wave3 img{
+        position: absolute;
+        width: 393px;
+        height: 363px;
+    }
+
+    /*-------------Footer Section-----------------------*/
+    footer>section:first-child {
+        margin-left: -157px;
+    }
+
+    footer>section:nth-child(3) {
+        margin-left: -160px;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        background-color: #0c1154;
+        margin-top: 0px;
+        padding-top: 0;
+    }
 }
 
 
