@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <script src="assests/js/bootstrap.js"></script>
+
+    <style>
+
+        h1{
+            position: relative;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            align-items: center;
+            margin-left: 36%;
+        }
+
+
+        section{
+            width:1000px;
+            height: 300px;
+            /*border: 2px solid red;*/
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            display:flex;
+            align-items: center;
+        }
+
+        section>div{
+            border: 1px solid rgba(0, 0, 0, 0.76);
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        section>div:first-child{
+            align-self: start;
+        }
+
+        /*section>div:nth-child(2){
+            background-color: rgb(241, 178, 22);
+        }
+
+        section>div:nth-child(3){
+            background-color: rgb(71, 238, 4);
+        }
+
+        section>div:nth-child(4){
+            background-color: rgb(84, 14, 74);
+        }
+
+        section>div:nth-child(5){
+            background-color: deeppink;
+        }
+
+        section>div:nth-child(6){
+            background-color: rgb(230, 0, 255);
+        }*/
+
+        section>div:last-child{
+            align-self: end;
+        }
+
+</style>
+
+
+</head>
+<body>
+
+    <main>
+        <h1>Java Script Queue</h1>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+
+    </main>
+
+<script>
+    let colors = ["red", "yellow", "green", "blue", "deeppink","orange"];
+
+    setInterval(function (){
+        let divArray = document.querySelector("section").children;
+        for (let i = 0; i < divArray.length; i++) {
+            console.log(divArray[i]);
+            divArray[i].style.background=colors[i];
+        }
+        let last = colors.pop();
+        colors.unshift(last);
+    },200);
+
+
+    let myArray = ["a", "b", "c", "d", "e","f"];
+    myArray.length;
+
+
+
+</script>
+
+
+</body>
+</html>

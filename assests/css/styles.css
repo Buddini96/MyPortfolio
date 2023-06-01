@@ -1716,7 +1716,6 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 /*--------------------------Page Responsive---------------------------------*/
 @media (max-width: 1440px) {
 
-
     #heading1 {
         font-size: 34px;
     }
@@ -1999,6 +1998,68 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         padding-top: 0;
     }
 */
+
+}
+
+/*--------------------------Page Responsive---------------------------------*/
+@media (max-width: 1024px) {
+    #heading1 {
+        font-size: 34px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*----------Home---------------*/
+    main #home section div:first-child>aside:nth-child(1)>h1:first-child {
+        font-size: 35px;
+    }
+
+    main #home section div:first-child>aside:nth-child(1) {
+        margin-left: -110px;
+        top: 15%;
+    }
+
+    .animated-text {
+        left: 83px;
+        font-size: 35px;
+    }
+
+    .profile {
+        width: 438px;
+        height: auto;
+        top: 19%;
+        right: 36px;
+        padding-top: 20px;
+    }
+
+    main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
+        font-size: 23px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+        margin-left: 103px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div {
+        width: 57px;
+        height: 57px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav:nth-child(2)>div>a>i {
+        font-size: 2.5em;
+    }
+
+    .blob1 {
+        margin-left: -240px;
+        margin-top: 2px;
+    }
 
 }
 
