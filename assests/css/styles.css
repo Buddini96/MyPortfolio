@@ -1713,7 +1713,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
 
 
-/*--------------------------Page Responsive---------------------------------*/
+/*--------------------------Page Responsive -1440px---------------------------------*/
 @media (max-width: 1440px) {
 
     #heading1 {
@@ -2001,7 +2001,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
 }
 
-/*--------------------------Page Responsive---------------------------------*/
+/*--------------------------Page Responsive -1024px---------------------------------*/
 @media (max-width: 1024px) {
     #heading1 {
         font-size: 34px;
@@ -2060,6 +2060,133 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         margin-left: -240px;
         margin-top: 2px;
     }
+
+    .blob3 {
+        right: -303px;
+        top: 409px;
+    }
+
+    .para, .para1, .info {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    #education section>div {
+        width: 270px;
+        height: 154px;
+        left: 83px;
+        top: -77px;
+    }
+
+    #education section>.eduImg{
+        width: 30%;
+    }
+
+    .eduImg img:nth-child(1) {
+        left: -318px;
+        top: -251px;
+    }
+
+    .eduImg img:nth-child(2) {
+        left: -220px;
+    }
+
+    .eduImg img:nth-child(3) {
+        left: -96px;
+        top: -856px;
+    }
+
+    .eduImg img:nth-child(4) {
+        left: 38px;
+        top: -1157px;
+    }
+
+    .eduImg img:nth-child(5) {
+        left: 176px;
+        top: -1457px;
+    }
+
+    .arrowImg img:nth-child(2) {
+        right: -99px;
+        top: -308px;
+    }
+
+    .arrowImg img:nth-child(3) {
+        right: -224px;
+    }
+
+    .arrowImg img:nth-child(4) {
+        right: -356px;
+        top: -675px;
+    }
+
+    main #education section:nth-child(2)>section>div>h4:nth-child(2) {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    main #education section:nth-child(2)>section>div>p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    main #education section:first-child>h1 {
+        margin-top: -26px;
+        margin-bottom: 78px;
+        padding-bottom: 18px;
+
+    }
+
+    #education {
+        height: 163vh;
+    }
+
+    .slider {
+        width: 90%;
+        /* padding: 30px; */
+    }
+
+    .wrapper {
+        /* width: 1381px; */
+        display: flex;
+        gap: 1px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: -169px;
+        margin-right: 159px;
+        flex-wrap: nowrap;
+        position: relative;
+        flex-direction: row;
+        padding-left: 332px;
+        padding-right: 30px;
+    }
+
+    .wave3 img {
+        position: absolute;
+        width: 418px;
+        height: 415px;
+    }
+
+    .wave4 img {
+        display: none;
+    }
+
+    .wave img{
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 419px;
+    }
+
+    .wave1 img{
+        display: none;
+    }
+
+}
+
+/*--------------------------Page Responsive -768px---------------------------------*/
+@media (max-width: 768px) {
+
+
 
 }
 
