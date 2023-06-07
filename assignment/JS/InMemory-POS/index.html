@@ -68,28 +68,28 @@
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
                     <form action="" method="post" id="myForm">
                         <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="cid" placeholder="Id">
-                            <label for="cid">Id</label>
+                            <input type="text" class="form-control" id="txtcid" placeholder="Id">
+                            <label for="txtcid">Id</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="Name" placeholder="Name">
-                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="txtName" placeholder="Name">
+                            <label for="txtName">Name</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Address" placeholder="Address">
-                            <label for="Address">Address</label>
+                            <input type="email" class="form-control" id="txtAddress" placeholder="Address">
+                            <label for="txtAddress">Address</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="contact" placeholder="Contact">
-                            <label for="contact">Contact</label>
+                            <input type="email" class="form-control" id="txtcontact" placeholder="Contact">
+                            <label for="txtcontact">Contact</label>
                         </div>
                     </form>
 
                     <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
+                        <button type="button" class="btn btn-success me-1 mt-2 mb-3" id="btnSave">Save</button>
                         <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
                         <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
                         <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
@@ -109,7 +109,7 @@
                             <!--<th style="background-color: #76a9d0" scope="col">Action</th>-->
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tblCustomer">
                         <!--<tr>
                             <th scope="row">C001</th>
                             <td>Kamal</td>
@@ -542,6 +542,7 @@
         </main>
     </div>
 </div>
+    <script src="assests/js/jquery-3.7.0.min.js"></script>
 
 <script>
     document.getElementById("customers");
@@ -579,15 +580,16 @@
         d/*ocument.getElementById("placeOrder").style.display="block";*/
     });
 
-$("#btnCustomer").click()(function (){
-    let id = $("#cid").val;
-    let name = $("#Name").val;
-    let address = $("#Address").val;
-    let contact = $("#contact").val;
+$("#btnSave").click(function(){
+    let id = $("#txtcid").val();
+    let name = $("#txtName").val();
+    let address = $("#txtAddress").val();
+    let contact = $("#txtcontact").val();
+
 
     let tBody = $("#tblCustomer");
 
-    let tr = $('<tr><td>'+cid+'</td> <td>'+Name+'</td> <td>'+Address+'</td> <td>'+contact+'</td></tr>')
+    let tr = $('<tr><td>'+id+'</td> <td>'+name+'</td> <td>'+address+'</td> <td>'+contact+'</td></tr>');
 
     //set the row to the table body
     tBody.append(tr);
