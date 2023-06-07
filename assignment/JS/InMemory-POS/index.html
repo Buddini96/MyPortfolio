@@ -545,6 +545,7 @@
     <script src="assests/js/jquery-3.7.0.min.js"></script>
 
 <script>
+    let customerList = [];
     document.getElementById("customers");
     document.getElementById("item").style.display="none";
     document.getElementById("orders").style.display="none";
@@ -581,19 +582,21 @@
     });
 
 $("#btnSave").click(function(){
-    let id = $("#txtcid").val();
-    let name = $("#txtName").val();
-    let address = $("#txtAddress").val();
-    let contact = $("#txtcontact").val();
+    let cusId = $("#txtcid").val();
+    let cusName = $("#txtName").val();
+    let cusAddress = $("#txtAddress").val();
+    let cusContact = $("#txtcontact").val();
 
 
     let tBody = $("#tblCustomer");
 
-    let tr = $('<tr><td>'+id+'</td> <td>'+name+'</td> <td>'+address+'</td> <td>'+contact+'</td></tr>');
+    let tr = $('<tr><td>'+cusId+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
 
     //set the row to the table body
     tBody.append(tr);
 
+    customerList.push({id:cusId, name:cusName, address:cusAddress, contact:cusContact})
+    console.log(customerList)
 });
 
 
