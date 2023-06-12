@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <style>
+        body{
+            display: flex;
+            background-color: #f3ecf2;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+        .calculator{
+            position: relative;
+            background-color: rgba(161, 147, 153, 0.69);
+            padding: 7px;
+            border-radius: 10px;
+            z-index: 4;
+
+        }
+
+        .screen{
+            position: relative;
+            width: 306px;
+            height: 94px;
+            background-color: rgba(236, 236, 236, 0.11);
+            color: white;
+            font-size: 30px;
+            text-align: end;
+            padding: 4px;
+            margin-left: 152px;
+            /*opacity: 0.5;*/
+            margin-bottom: 6px;
+            border-radius: 4px;
+            z-index: 4;
+            box-shadow: 0 0 20px rgba( 74, 28, 0.15);
+            text-align: right;
+        }
+
+        #clear{
+            position: relative;
+            top: 100px;
+            left: 35px;
+            background-color: rosybrown;
+        }
+
+        #clear:active{
+            background-color: #eebb60;
+        }
+
+        .buttons{
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        button{
+            background-color: rgba(255,255,255);
+            /* color: rgba(255,255,255);*/
+            border: none;
+            font-size: 50px;
+            height: 100px;
+            width: 100px;
+            margin: 4px;
+            top: auto;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            background-color: #de3076;
+        }
+
+        button:active{
+            background-color: #e41cf8;
+        }
+
+        #equals{
+            background-color: #457ec2;
+        }
+
+        #divide, #multi, #minus, #plus{
+            background-color: rgba(239, 172, 172, 0.97);
+        }
+
+        #equals:active, #multi:active, #minus:active, #plus:active, #divide:active{
+            background-color: #e41cf8;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="calculator">
+    <button id="clear">C</button>
+    <div class="screen">0</div>
+    <div class="buttons">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button id="plus">+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button id="minus">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button id="divide">/</button>
+        <button>0</button>
+        <button>.</button>
+        <button id="equals">=</button>
+        <button id="multi">*</button>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cal.js"></script>
+<script src="assets/js/text.js"></script>
+
+
+</body>
+</html>
