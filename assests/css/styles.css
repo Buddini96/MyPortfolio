@@ -475,6 +475,14 @@ main #education section:first-child>h1 {
     margin-top: -116px;
 }
 
+.blue1{
+    position: absolute;
+    right: 30px;
+    left: 1308px;
+    /* margin-bottom: 22px; */
+    margin-top: -90px;
+}
+
 main #education section:first-child>h1::after {
     content: "";
     position: absolute;
@@ -1569,6 +1577,12 @@ footer {
     margin-top: 0px;
     padding-top: 0;
 
+}
+
+.blob7{
+    position: absolute;
+    right: -213px;
+    top: 263px;
 }
 
 footer>section:first-child>div:first-child>h2:first-child {
