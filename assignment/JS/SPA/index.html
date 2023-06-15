@@ -14,10 +14,13 @@
             background-size: cover;
         }
     </style>
+    <script src="assests/js/jquery-3.7.0.min.js"></script>
+
+
 </head>
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
     <div class="container">
         <a class="navbar-brand" href="#"><i class="fa-brands fa-xing"></i> POS SYSTEM</a>
         <button
@@ -36,28 +39,37 @@
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../../CSS - Framework/POS/home.html" id="btnHome" >Home</a>
+                    <a class="nav-link text-white" href="#" id="btnHome" >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../../CSS - Framework/POS/customer.html" id="btnCustomer" >Customer</a>
+                    <a class="nav-link text-white" href="#customers" id="btnCustomer" >Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../../CSS - Framework/POS/store.html" id="btnItem" >Store</a>
+                    <a class="nav-link text-white" href="#item" id="btnItem" >Store</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../../CSS - Framework/POS/order.html" id="btnOrder" >Order</a>
+                    <a class="nav-link text-white" href="#orders" id="btnOrder" >Order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../../CSS - Framework/POS/placeOrder.html" id="btnPlaceOrder" >Place Order</a>
+                    <a class="nav-link text-white" href="#placeOrder" id="btnPlaceOrder" >Place Order</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
+<div id="home">
+    <div
+            class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <h1 class="text-white">POS SYSTEM</h1>
+        </div>
+    </div>
+</div>
 <div
+
         class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
     <div class="content text-center">
+
 
         <!------------------Customer Section----------------------->
         <main class="container" id="customers">
@@ -65,31 +77,34 @@
                 <h2 class="text-body pt-5 m-lg-2 tex">Manage Customers</h2>
                 <section class="col-12 col-sm-12 col-md-12 col-lg-4 " >
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
-                    <form>
+                    <form action="" method="post" id="myForm">
                         <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="cid" placeholder="Id">
-                            <label for="cid">Id</label>
+                            <input type="text" class="form-control" id="txtcid" placeholder="Id">
+                            <label for="txtcid">Id</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="Name" placeholder="Name">
-                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="txtName" placeholder="Name">
+                            <label for="txtName">Name</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Address" placeholder="Address">
-                            <label for="Address">Address</label>
+                            <input type="email" class="form-control" id="txtAddress" placeholder="Address">
+                            <label for="txtAddress">Address</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="contact" placeholder="Contact">
-                            <label for="contact">Contact</label>
+                            <input type="email" class="form-control" id="txtcontact" placeholder="Contact">
+                            <label for="txtcontact">Contact</label>
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
-                        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSaveCustomer">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateCustomer">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearCustomer">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteCustomer"></i>Delete</button>
+
                     </div>
 
                 </section>
@@ -106,7 +121,7 @@
                             <th style="background-color: #76a9d0" scope="col">Action</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tblCustomer">
                         <tr>
                             <th scope="row">C001</th>
                             <td>Kamal</td>
@@ -171,29 +186,31 @@
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
                     <form>
                         <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="Iid" placeholder="Id">
-                            <label for="Iid">Item id</label>
+                            <input type="text" class="form-control" id="txtItemId" placeholder="Id">
+                            <label for="txtItemId">Item id</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
-                            <label for="ItemDesc">Description</label>
+                            <input type="text" class="form-control" id="txtItemName" placeholder="Name">
+                            <label for="txtItemName">Description</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="UPrice" placeholder="Address">
-                            <label for="UPrice">Unit Price</label>
+                            <input type="email" class="form-control" id="txtItemPrice" placeholder="Address">
+                            <label for="txtItemPrice">Unit Price</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Qty" placeholder="Contact">
-                            <label for="Qty">Quantity</label>
+                            <input type="email" class="form-control" id="txtItemQty" placeholder="Contact">
+                            <label for="txtItemQty">Quantity</label>
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
-                        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSaveItem">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateItem">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearItem">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteItem"></i>Delete</button>
                     </div>
 
                 </section>
@@ -208,9 +225,10 @@
                             <th style="background-color: #76a9d0" scope="col">Unit Price</th>
                             <th style="background-color: #76a9d0" scope="col">Quantity</th>
                             <th style="background-color: #76a9d0" scope="col">Action</th>
+
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tblItem">
                         <tr>
                             <th scope="row">I001</th>
                             <td>Dhal</td>
@@ -539,9 +557,12 @@
         </main>
     </div>
 </div>
+<script src="assests/js/jquery-3.7.0.min.js"></script>
 
 <script>
-    document.getElementById("customers");
+
+    document.getElementById("home").style.display="block";
+    document.getElementById("customers").style.display="none";
     document.getElementById("item").style.display="none";
     document.getElementById("orders").style.display="none";
     document.getElementById("placeOrder").style.display="none";
@@ -557,25 +578,37 @@
     document.getElementById("btnItem").addEventListener("click", function(){
         document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="none";
-        document.getElementById("item").style.display="block";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
+        document.getElementById("item").style.display="block";
     });
     document.getElementById("btnOrder").addEventListener("click", function(){
-        document.getElementById("home").style.display="none";
+        // document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="block";
         document.getElementById("placeOrder").style.display="none";
     });
     document.getElementById("btnPlaceOrder").addEventListener("click", function(){
-        document.getElementById("home").style.display="none";
+        // document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="block";
     });
 
+    document.getElementById("btnHome").addEventListener("click", function(){
+        document.getElementById("home").style.display="block";
+        document.getElementById("customers").style.display="none";
+        document.getElementById("orders").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+        document.getElementById("item").style.display="none";
+    });
+
+
+
+
 </script>
+
 </body>
 </html>
