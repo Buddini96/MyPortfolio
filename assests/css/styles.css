@@ -483,6 +483,20 @@ main #education section:first-child>h1 {
     margin-top: -90px;
 }
 
+.bl1{
+    position: absolute;
+    right: 51px;
+    left: 158px;
+    margin-top: -936px;
+}
+
+
+.cir1{
+    position: absolute;
+    right: 7px;
+    left: 364px;
+    margin-top: -654px;
+}
 main #education section:first-child>h1::after {
     content: "";
     position: absolute;
@@ -1791,10 +1805,17 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         font-size: 1.9em;
     }*/
 
-    .blob1 {
+    .blue3 {
         margin-left: -240px;
         margin-top: 2px;
     }
+
+    /*.cir2{
+        margin-left: -240px;
+        margin-top: 2px;
+    }*/
+
+
 
     section{
         /*width: 100vw;*/
@@ -1820,6 +1841,13 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         font-size: 18px;
         line-height: 24px;
     }
+/*
+    #cirAbout {
+        position: absolute;
+        right: 98px;
+        !* top: 30px; *!
+        margin-top: -159px;
+    }*/
 
     .para1{
         font-size: 18px;
@@ -1827,8 +1855,19 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     .blob3{
-        right: -190px;
-        top: 409px;
+        position: absolute;
+        right: -150px;
+        top: 496px;
+    }
+
+    #cirAbout{
+        position: absolute;
+        right: 98px;
+        /* top: 30px; */
+        margin-top: -159px;
+    }
+    #Rishika{
+        border: 2px solid red;
     }
 
     /*--------------Education Section----------------*/

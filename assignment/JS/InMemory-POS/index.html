@@ -97,11 +97,11 @@
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3" id="btnSave">Save</button>
-                        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSave">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdate">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClear">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDelete"></i>Delete</button>
                     </div>
 
                 </section>
@@ -554,7 +554,7 @@
     <script src="assests/js/jquery-3.7.0.min.js"></script>
 
 <script>
-    let customerList = [];
+
     document.getElementById("home").style.display="none";
     document.getElementById("customers").style.display="none";
     document.getElementById("item").style.display="none";
@@ -570,8 +570,7 @@
 
     });
     document.getElementById("btnItem").addEventListener("click", function(){
-
-        // document.getElementById("home").style.display="none";
+        document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
@@ -592,7 +591,30 @@
         document.getElementById("placeOrder").style.display="block";
     });
 
-$("#btnSave").click(function(){
+
+
+    let customerList = [];
+    let customerIndex;
+
+
+    function clearCustomerFields() {
+        $('#txtcid').val("");
+        $('#txtName').val("");
+        $('#txtAddress').val("");
+        $('#txtcontact').val("");
+    }
+
+    /*let btnAdd = $("#btnAdd");
+    let tblCustomer = $("#tblCustomer");
+    let btnUpdate = $("#btnUpdate");
+    let btnDelete = $("#btnDelete");
+    let btnClear = $("#btnClear");*/
+
+
+
+
+
+    $("#btnSave").click(function(){
     let cusId = $("#txtcid").val();
     let cusName = $("#txtName").val();
     let cusAddress = $("#txtAddress").val();
@@ -609,6 +631,77 @@ $("#btnSave").click(function(){
     customerList.push({id:cusId, name:cusName, address:cusAddress, contact:cusContact})
     console.log(customerList)
 });
+
+
+
+    let selectedCustomerRow;
+
+    $("#tblCustomer").click(function (event){
+   selectedCustomerRow = event.target.closest('tr');
+   $('#txtcid').val(selectedCustomerRow.cells[0].textContent);
+    $('#txtName').val(selectedCustomerRow.cells[1].textContent);
+    $('#txtAddress').val(selectedCustomerRow.cells[2].textContent);
+    $('#txtcontact').val(selectedCustomerRow.cells[3].textContent);
+
+    customerIndex = customerList.findIndex(customerList => customerList.id === selectedCustomerRow.cells[0].textContent);
+
+});
+
+
+    $("#btnUpdate").click(function(){
+        console.log("Ebuwa");
+        let cusId = $("#txtcid").val();
+        let cusName = $("#txtName").val();
+        let cusAddress = $("#txtAddress").val();
+        let cusContact = $("#txtcontact").val();
+
+        /*console.log(cusId,cusName,cusAddress,cusContact);*/
+        console.log(selectedCustomerRow);
+        selectedCustomerRow.cells[0].textContent=cusId;
+        selectedCustomerRow.cells[1].textContent=cusName;
+        selectedCustomerRow.cells[2].textContent=cusAddress;
+        selectedCustomerRow.cells[3].textContent=cusContact;
+
+        clearCustomerFields();
+            console.log(customerIndex);
+
+
+        //updating the selected customer from the list
+        customerList[customerIndex].id=cusId;
+        customerList[customerIndex].name=cusName;
+        customerList[customerIndex].address=cusAddress;
+        customerList[customerIndex].contact=cusContact;
+
+        console.log(customerList);
+
+        /*btnUpdate.prop('disabled',true);
+        btnDelete.prop('disabled',true);
+        btnAdd.prop('disabled',false);*/
+    });
+
+
+
+    $("#btnDelete").click(function(){
+        console.log("hhh");
+        selectedCustomerRow.remove();
+
+        //removing the selected customer from the list
+        customerList.splice(customerIndex,1);
+        console.log(customerList);
+
+        clearCustomerFields();
+    console.log(customerList);
+        /*btnUpdate.prop('disabled',true);
+        btnDelete.prop('disabled',true);
+        btnSave.prop('disabled',false);*/
+    });
+
+
+
+    $("#btnClear").click(function(){
+        clearCustomerFields();
+    })
+
 
 
 
