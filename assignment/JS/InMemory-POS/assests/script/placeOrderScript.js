@@ -22,3 +22,33 @@
         $('#cusPricePO').val(itemList[itemIndex].price);
 
     });
+
+    let amountOfTotal=0;
+    let cartDetails=[];
+    $("#btnAddToCart").click(function(){
+        let itemId = $("#txtItemId").val();
+        let itemDes = $("#txtItemName").val();
+        let itemPrice = $("#txtItemPrice").val();
+        let itemQty = $("#itemQtyPO").val();
+        let totalOrder = itemPrice * itemQty;
+
+
+        let tBody = $("#tblPlaceOrder");
+
+        let tr = $('<tr><td>'+itemId+'</td> <td>'+itemDes+'</td> <td>'+itemPrice+'</td> <td>'+itemQty+'</td><td>'+totalOrder+'</td></tr>');
+
+        //set the row to the table body
+        tBody.append(tr);
+
+        cartDetails.push({id:itemId, description:itemDes, price:itemPrice, qty:itemQty, total:totalOrder})
+        console.log(itemList)
+
+        //    load id's into place order form
+        let cusIdList = document.getElementById("cusIdList");
+
+        let option = document.createElement("option");
+
+        //set full total
+        amountOfTotal = amountOfTotal+totalOrder;
+        $('#fullTotal').val(amountOfTotal);
+    });
