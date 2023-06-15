@@ -17,6 +17,7 @@
     <script src="assests/js/jquery-3.7.0.min.js"></script>
 
 
+
 </head>
 <body>
 
@@ -306,18 +307,18 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">CustomerID</span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" id="cusIdList" aria-label="Default select example">
                                     <option selected>Select ID</option>
-                                    <option value="1">C001</option>
+                                    <!--<option value="1">C001</option>
                                     <option value="2">C002</option>
-                                    <option value="3">C003</option>
+                                    <option value="3">C003</option>-->
                                 </select>
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group">
-                                <span class="input-group-text">Customer Name</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <span class="input-group-text" >Customer Name</span>
+                                <input class="form-control" id="cusNamePO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
@@ -327,11 +328,11 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Item ID</span>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" id="itemIdList" aria-label="Default select example">
                                     <option selected>Select ID</option>
-                                    <option value="1">I001</option>
+                                    <!--<option value="1">I001</option>
                                     <option value="2">I002</option>
-                                    <option value="3">I003</option>
+                                    <option value="3">I003</option>-->
                                 </select>
                             </div>
                         </div>
@@ -339,28 +340,28 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Description</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusDesPO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Qty On Hand</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusQtyOnHandPO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Unit Price</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="cusPricePO" type="text" placeholder="" aria-label="Disabled input example" disabled>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Quantity</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                                <input class="form-control" id="cusQtyPO" type="text" placeholder="" aria-label="Disabled input example">
                             </div>
                         </div>
 
@@ -510,5 +511,6 @@
 </script>
     <script src="assests/script/customerScript.js"></script>
     <script src="assests/script/itemScript.js"></script>
+    <script src="assests/script/placeOrderScript.js"></script>
 </body>
 </html>

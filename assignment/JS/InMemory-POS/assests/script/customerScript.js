@@ -27,6 +27,15 @@
 
     customerList.push({id:cusId, name:cusName, address:cusAddress, contact:cusContact})
     console.log(customerList)
+
+        //    load id's into place order form
+        let cusIdList = document.getElementById("cusIdList");
+
+        let option = document.createElement("option");
+
+        option.text=cusId;
+        option.value=cusId;
+        cusIdList.append(option);
 });
 
 
@@ -75,8 +84,6 @@
     btnDelete.prop('disabled',true);
     btnAdd.prop('disabled',false);*/
 });
-
-
 
     $("#btnDeleteCustomer").click(function(){
     console.log("hhh");

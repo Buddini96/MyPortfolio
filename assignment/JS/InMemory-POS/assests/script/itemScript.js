@@ -12,20 +12,29 @@ function clearItemFields() {
 
 $("#btnSaveItem").click(function(){
     let itemId = $("#txtItemId").val();
-    let itemName = $("#txtItemName").val();
+    let itemDes = $("#txtItemName").val();
     let itemPrice = $("#txtItemPrice").val();
     let itemQty = $("#txtItemQty").val();
 
 
     let tBody = $("#tblItem");
 
-    let tr = $('<tr><td>'+itemId+'</td> <td>'+itemName+'</td> <td>'+itemPrice+'</td> <td>'+itemQty+'</td></tr>');
+    let tr = $('<tr><td>'+itemId+'</td> <td>'+itemDes+'</td> <td>'+itemPrice+'</td> <td>'+itemQty+'</td></tr>');
 
     //set the row to the table body
     tBody.append(tr);
 
-    itemList.push({id:itemId, name:itemName, price:itemPrice, qty:itemQty})
+    itemList.push({id:itemId, description:itemDes, price:itemPrice, qty:itemQty})
     console.log(itemList)
+
+    //    load id's into place order form
+    let itemIdList = document.getElementById("itemIdList");
+
+    let option = document.createElement("option");
+
+    option.text=itemId;
+    option.value=itemId;
+    itemIdList.append(option);
 });
 
 
