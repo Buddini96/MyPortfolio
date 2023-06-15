@@ -433,6 +433,13 @@ main #profile{
     top: 263px;
 }
 
+#cirAbout{
+    position: absolute;
+    right: 98px;
+    /* top: 30px; */
+    margin-top: -159px;
+}
+
 
 /*-------------------education section-------------------*/
 
@@ -1860,15 +1867,8 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         top: 496px;
     }
 
-    #cirAbout{
-        position: absolute;
-        right: 98px;
-        /* top: 30px; */
-        margin-top: -159px;
-    }
-    #Rishika{
-        border: 2px solid red;
-    }
+
+
 
     /*--------------Education Section----------------*/
 

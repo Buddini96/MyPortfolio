@@ -15,6 +15,8 @@
         }
     </style>
     <script src="assests/js/jquery-3.7.0.min.js"></script>
+
+
 </head>
 <body>
 
@@ -98,10 +100,10 @@
                     </form>
 
                     <div class="btn-group col-12">
-                        <button type="button" class="btn btn-success " id="btnSave">Save</button>
-                        <button type="button" class="btn btn-warning " id="btnUpdate">Update</button>
-                        <button type="button" class="btn btn-light " id="btnClear">Clear</button>
-                        <button type="button" class="btn btn-danger " id="btnDelete"></i>Delete</button>
+                        <button type="button" class="btn btn-success " id="btnSaveCustomer">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateCustomer">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearCustomer">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteCustomer"></i>Delete</button>
                     </div>
 
                 </section>
@@ -119,56 +121,6 @@
                         </tr>
                         </thead>
                         <tbody id="tblCustomer">
-                        <!--<tr>
-                            <th scope="row">C001</th>
-                            <td>Kamal</td>
-                            <td>Galle</td>
-                            <td>0772356600</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C002</th>
-                            <td>Nimal</td>
-                            <td>Matara</td>
-                            <td>0778000039</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C003</th>
-                            <td>Nirmala</td>
-                            <td>Colombo</td>
-                            <td>0778956324</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C004</th>
-                            <td>Kasun</td>
-                            <td>Matara</td>
-                            <td>0770123000</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">C005</th>
-                            <td>Sachin</td>
-                            <td>Galle</td>
-                            <td>0778050000</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>-->
                         </tbody>
                     </table>
                 </section>
@@ -183,29 +135,31 @@
                     <h5 class="text-dark text-center m-lg-3 pt-5" ></h5>
                     <form>
                         <div class="form-floating mb-3 mt-2">
-                            <input type="text" class="form-control" id="Iid" placeholder="Id">
-                            <label for="Iid">Item id</label>
+                            <input type="text" class="form-control" id="txtItemId" placeholder="Id">
+                            <label for="txtItemId">Item id</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="ItemDesc" placeholder="Name">
-                            <label for="ItemDesc">Description</label>
+                            <input type="text" class="form-control" id="txtItemName" placeholder="Name">
+                            <label for="txtItemName">Description</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="UPrice" placeholder="Address">
-                            <label for="UPrice">Unit Price</label>
+                            <input type="email" class="form-control" id="txtItemPrice" placeholder="Address">
+                            <label for="txtItemPrice">Unit Price</label>
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="Qty" placeholder="Contact">
-                            <label for="Qty">Quantity</label>
+                            <input type="email" class="form-control" id="txtItemQty" placeholder="Contact">
+                            <label for="txtItemQty">Quantity</label>
                         </div>
                     </form>
 
-                    <div class="col-8 ms-5">
-                        <button type="button" class="btn btn-success me-1 mt-2 mb-3">Save</button>
-                        <button type="button" class="btn btn-warning me-1 mt-2 mb-3 ms-4">Update</button>
+                    <div class="btn-group col-12">
+                        <button type="button" class="btn btn-success " id="btnSaveItem">Save</button>
+                        <button type="button" class="btn btn-warning " id="btnUpdateItem">Update</button>
+                        <button type="button" class="btn btn-light " id="btnClearItem">Clear</button>
+                        <button type="button" class="btn btn-danger " id="btnDeleteItem"></i>Delete</button>
                     </div>
 
                 </section>
@@ -219,60 +173,11 @@
                             <th style="background-color: #76a9d0" scope="col">Description</th>
                             <th style="background-color: #76a9d0" scope="col">Unit Price</th>
                             <th style="background-color: #76a9d0" scope="col">Quantity</th>
-                            <th style="background-color: #76a9d0" scope="col">Action</th>
+
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">I001</th>
-                            <td>Dhal</td>
-                            <td>600.00</td>
-                            <td>20</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I002</th>
-                            <td>Soap</td>
-                            <td>220.00</td>
-                            <td>50</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I003</th>
-                            <td>Shampoo</td>
-                            <td>900.00</td>
-                            <td>10</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I004</th>
-                            <td>Biscuts</td>
-                            <td>300.00</td>
-                            <td>40</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I005</th>
-                            <td>Milk</td>
-                            <td>700.00</td>
-                            <td>10</td>
-                            <td>
-                                <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                            </td>
-                        </tr>
+                        <tbody id="tblItem">
+
                         </tbody>
                     </table>
                 </section>
@@ -555,7 +460,7 @@
 
 <script>
 
-    document.getElementById("home").style.display="none";
+    document.getElementById("home").style.display="block";
     document.getElementById("customers").style.display="none";
     document.getElementById("item").style.display="none";
     document.getElementById("orders").style.display="none";
@@ -564,7 +469,7 @@
     document.getElementById("btnCustomer").addEventListener("click", function () {
          document.getElementById("home").style.display="none";
         document.getElementById("customers").style.display="block";
-        /*document.getElementById("item").style.display="none";*/
+        document.getElementById("item").style.display="none";
         document.getElementById("orders").style.display="none";
         document.getElementById("placeOrder").style.display="none";
 
@@ -591,120 +496,19 @@
         document.getElementById("placeOrder").style.display="block";
     });
 
-
-
-    let customerList = [];
-    let customerIndex;
-
-
-    function clearCustomerFields() {
-        $('#txtcid').val("");
-        $('#txtName').val("");
-        $('#txtAddress').val("");
-        $('#txtcontact').val("");
-    }
-
-    /*let btnAdd = $("#btnAdd");
-    let tblCustomer = $("#tblCustomer");
-    let btnUpdate = $("#btnUpdate");
-    let btnDelete = $("#btnDelete");
-    let btnClear = $("#btnClear");*/
-
-
-
-
-
-    $("#btnSave").click(function(){
-    let cusId = $("#txtcid").val();
-    let cusName = $("#txtName").val();
-    let cusAddress = $("#txtAddress").val();
-    let cusContact = $("#txtcontact").val();
-
-
-    let tBody = $("#tblCustomer");
-
-    let tr = $('<tr><td>'+cusId+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
-
-    //set the row to the table body
-    tBody.append(tr);
-
-    customerList.push({id:cusId, name:cusName, address:cusAddress, contact:cusContact})
-    console.log(customerList)
-});
-
-
-
-    let selectedCustomerRow;
-
-    $("#tblCustomer").click(function (event){
-   selectedCustomerRow = event.target.closest('tr');
-   $('#txtcid').val(selectedCustomerRow.cells[0].textContent);
-    $('#txtName').val(selectedCustomerRow.cells[1].textContent);
-    $('#txtAddress').val(selectedCustomerRow.cells[2].textContent);
-    $('#txtcontact').val(selectedCustomerRow.cells[3].textContent);
-
-    customerIndex = customerList.findIndex(customerList => customerList.id === selectedCustomerRow.cells[0].textContent);
-
-});
-
-
-    $("#btnUpdate").click(function(){
-        console.log("Ebuwa");
-        let cusId = $("#txtcid").val();
-        let cusName = $("#txtName").val();
-        let cusAddress = $("#txtAddress").val();
-        let cusContact = $("#txtcontact").val();
-
-        /*console.log(cusId,cusName,cusAddress,cusContact);*/
-        console.log(selectedCustomerRow);
-        selectedCustomerRow.cells[0].textContent=cusId;
-        selectedCustomerRow.cells[1].textContent=cusName;
-        selectedCustomerRow.cells[2].textContent=cusAddress;
-        selectedCustomerRow.cells[3].textContent=cusContact;
-
-        clearCustomerFields();
-            console.log(customerIndex);
-
-
-        //updating the selected customer from the list
-        customerList[customerIndex].id=cusId;
-        customerList[customerIndex].name=cusName;
-        customerList[customerIndex].address=cusAddress;
-        customerList[customerIndex].contact=cusContact;
-
-        console.log(customerList);
-
-        /*btnUpdate.prop('disabled',true);
-        btnDelete.prop('disabled',true);
-        btnAdd.prop('disabled',false);*/
+    document.getElementById("btnHome").addEventListener("click", function(){
+        document.getElementById("home").style.display="block";
+        document.getElementById("customers").style.display="none";
+        document.getElementById("orders").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+        document.getElementById("item").style.display="none";
     });
-
-
-
-    $("#btnDelete").click(function(){
-        console.log("hhh");
-        selectedCustomerRow.remove();
-
-        //removing the selected customer from the list
-        customerList.splice(customerIndex,1);
-        console.log(customerList);
-
-        clearCustomerFields();
-    console.log(customerList);
-        /*btnUpdate.prop('disabled',true);
-        btnDelete.prop('disabled',true);
-        btnSave.prop('disabled',false);*/
-    });
-
-
-
-    $("#btnClear").click(function(){
-        clearCustomerFields();
-    })
 
 
 
 
 </script>
+    <script src="assests/script/customerScript.js"></script>
+    <script src="assests/script/itemScript.js"></script>
 </body>
 </html>
