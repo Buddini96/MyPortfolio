@@ -237,6 +237,14 @@ main>section:nth-child(4)>section:nth-child(3)>nav:first-child {
     top: -278px;
 }
 
+.FoBlob{
+    position: absolute;
+    right: -213px;
+
+    left: -236px;
+
+}
+
 
 #dev1{
     color:#0c1154;
@@ -427,17 +435,17 @@ main #profile{
     color: rgba(14, 14, 14, 0.71) !important;
 }
 
-.blob3{
+.blob3 {
     position: absolute;
-    right: -213px;
-    top: 263px;
+    right: -165px;
+    top: 393px;
 }
 
 #cirAbout{
     position: absolute;
-    right: 98px;
+    right: 168px;
     /* top: 30px; */
-    margin-top: -159px;
+    margin-top: -63px;
 }
 
 
@@ -476,12 +484,19 @@ main #education section:first-child>h1 {
 
 .blob5{
     position: absolute;
-    right: 30px;
+    right: 15px;
+    left: 1358px;
+    /* margin-bottom: 22px; */
+    margin-top: -36px;
+}
+
+
+.cir3{
+    position: absolute;
     left: 1308px;
     /* margin-bottom: 22px; */
     margin-top: -116px;
 }
-
 .blue1{
     position: absolute;
     right: 30px;
@@ -1599,6 +1614,8 @@ footer {
     padding-top: 0;
 
 }
+
+
 
 .blob7{
     position: absolute;
