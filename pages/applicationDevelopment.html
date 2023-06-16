@@ -277,6 +277,10 @@
             background-color: #ECF0F3;
         }
 
+        .ui-card{
+            display: none;
+        }
+
         .product img{
             width: 300px;
             height: 300px;
@@ -400,31 +404,31 @@
                 <ul>
                     <li class="list active">
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" onclick="filterObjects('all')"><i class="fa-solid fa-house"></i></span>
                             <span class="text">All</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" onclick="filterObjects('standalone')"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Standalone</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" onclick="filterObjects('java')"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Java</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" onclick="filterObjects('python')"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Python</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" onclick="filterObjects('hibernate')"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Hibernate</span>
                         </a>
                     </li>
@@ -437,7 +441,7 @@
     </section>
 
     <section class="card">
-        <div class="ui-card">
+        <div class="ui-card standalone java">
             <img src="assests/img/cloud.jpg">
             <div class="description">
                 <h3>Cosmetics Shop Management System</h3>
@@ -445,7 +449,7 @@
                 <a href="https://github.com/Buddini96/Cosmetic-Shop-Management-System-MVC-">View</a>
             </div>
         </div>
-        <div class="ui-card">
+        <div class="ui-card hibernate java">
             <img src="assests/img/cloud.jpg">
             <div class="description">
                 <h3>D24 Hostal Management System</h3>
@@ -453,7 +457,7 @@
                 <a href="https://github.com/Buddini96/HibernateCW-Hostel-Management-System">View</a>
             </div>
         </div>
-        <div class="ui-card">
+        <div class="ui-card standalone ">
             <img src="assests/img/cloud.jpg">
             <div class="description">
                 <h3>Connect 4 Game</h3>
@@ -462,7 +466,7 @@
             </div>
         </div>
 
-        <div class="ui-card">
+        <div class="ui-card standalone">
             <img src="assests/img/cloud.jpg">
             <div class="description">
                 <h3>Student Management System</h3>
@@ -471,7 +475,7 @@
             </div>
         </div>
 
-        <div class="ui-card">
+        <div class="ui-card java">
             <img src="assests/img/cloud.jpg">
             <div class="description">
                 <h3>Live Chat Application</h3>
@@ -493,6 +497,41 @@
 
     list.forEach((item) =>
         item.addEventListener('click' , activeLink));
+
+    filterObjects("all");
+
+    function filterObjects(c){
+        var x, i;
+        x = document.getElementById("ui-card");
+        if(c == "all") c = "";
+        for ( i = 0; i <x.length; i++) {
+            removeClass(x[i], "show");
+            if(x[i].className.indexOf(c) > -1) addClass(x[i], "show")
+        }
+    }
+
+    function addClass(element,name){
+        var i,arr1, arr2;
+        arr1 = element.className.split("");
+        arr2 = name.split("");
+        for (i = 0; i <arr2.length ; i++) {
+            if(arr1.indexOf(arr2[i]) == -1){
+                element.class += "" + arr2[i];
+            }
+        }
+    }
+
+    function removeClass(element, name){
+        var i, arr1, arr2;
+        arr1 = element.className.split("");
+        arr2 = name.split("");
+        for (i = 0; i <arr2.length ; i++) {
+            while (arr1.indexOf(arr2[i]) > -1){
+                arr1.splice(arr1.indexOf(arr2[i]), 1)
+            }
+        }
+        element.className = arr1.join("");
+    }
 </script>
 <!--<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->
