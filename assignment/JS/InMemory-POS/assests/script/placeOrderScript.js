@@ -43,7 +43,7 @@
         cartDetails.push({id:itemId, description:itemDes, price:itemPrice, qty:itemQty, total:totalOrder})
         console.log(itemList)
 
-        //    load id's into place order form
+        //    load id's into place order forms
         let cusIdList = document.getElementById("cusIdList");
 
         let option = document.createElement("option");
