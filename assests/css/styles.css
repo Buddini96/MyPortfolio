@@ -1881,7 +1881,15 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     .blob3{
         position: absolute;
         right: -150px;
-        top: 496px;
+        top: 333px;
+    }
+
+    #cirAbout {
+        position: absolute;
+        right: 168px;
+        /* top: 30px; */
+        margin-top: -132px;
+
     }
 
 
@@ -1900,6 +1908,20 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         /* margin-top: 13px; */
         left: 141px;
         top: -77px;
+    }
+
+    .bl1 {
+        position: absolute;
+        right: 60px;
+        left: -145px;
+        margin-top: -936px;
+    }
+
+    .cir1 {
+        position: absolute;
+        right: 7px;
+        left: 88px;
+        margin-top: -654px;
     }
 
     #education section:nth-child(2)>section>div>h4:nth-child(2) {
@@ -2210,6 +2232,16 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         height: 163vh;
     }
 
+    .blob3, .cir1, .bl1{
+        display:none;
+    }
+
+    #cirAbout{
+        display:none;
+    }
+
+
+
     .slider {
         width: 90%;
         /* padding: 30px; */
@@ -2256,7 +2288,45 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 /*--------------------------Page Responsive -768px---------------------------------*/
 @media (max-width: 768px) {
 
+body{
+    width: 142vh;
+}
 
+.profile {
+    width: 335px;
+}
+
+main #home section div:first-child>aside:nth-child(1)>h1:first-child {
+    font-size: 32px;
+}
+
+.animated-text {
+    font-size: 32px;
+}
+
+header {
+    width: 132vw;
+    }
+
+.blob2 {
+    left: -282px;
+    top: -220px;
+}
+
+.profile2 {
+    height: auto;
+    padding-right: 4%;
+    padding-left: -1%;
+    margin-top: 30px;
+    /* position: relative; */
+    width: 479px;
+
+}
+
+button.download {
+    margin-left: 552px;
+    margin-top: 7px;
+}
 
 }
 
