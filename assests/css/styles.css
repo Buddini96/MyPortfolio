@@ -2559,7 +2559,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     #heading1 {
         font-size: 34px;
-        top: 30px;
+        top: 10px;
     }
 
     main #home section div:first-child>aside:nth-child(1)>h1:first-child {
@@ -2751,6 +2751,92 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     main #gallery section:nth-child(2)>section:first-child>div:nth-child(7) {
         display: none;
     }
+    main #projects section:first-child>h1 {
+        font-size: 30px;
+        margin-top: -65px;
+        margin-bottom: 36px;
+    }
+
+    main #projects section:first-child>h1::after {
+        display: none;
+    }
+
+    .card {
+        margin-left: -18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .wrapper {
+        /* width: 1381px; */
+        display: block;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: -21px;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: -21px;
+    }
+
+    .card-thumb {
+        margin-left: 16px;
+        width: 245px;
+    }
+
+    .card_detail {
+        height: 330px;
+        margin-left: -21px;
+        width: 118%;
+    }
+
+    main #projects {
+        height: 291vh;
+    }
+
+    .heading_text {
+        font-size: 20px;
+    }
+
+    #contact #contact_info {
+        width: 58%;
+        height: 52%;
+        margin-left: 20px;
+    }
+    .wave3 img {
+        width: 275px;
+    }
+
+    #contact #contact_info h3 {
+        font-size: 29px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    pre {
+        font-family: monospace, monospace;
+        font-size: 0.7em;
+    }
+
+    .wave img {
+        width: 277px;
+        height: 347px;
+    }
+
+    main #contact {
+        height: 113vh;
+        height: 92vh;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+        display: none;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
 }
 
 
