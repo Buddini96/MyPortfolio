@@ -2521,13 +2521,13 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 }
 
 /*--------------------------Page Responsive - 425px---------------------------------*/
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     nav.menu{
         display: none;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     nav.menu{
         display: none;
     }
@@ -2537,19 +2537,17 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         height: 100vh;
     }
 
-    main #home {
-
-    }
-
-    main #home section div:first-child>aside:nth-child(1)>h1:first-child {
-        font-size: 14px;
+    #heading1 {
+        font-size: 34px;
+        top: 10px;
     }
 
     .profile {
-        width: 202px;
-        right: 11px;
-        top: 27%;
+        display: none;
     }
+
+
+
 }
 
 @media (max-width: 320px) {

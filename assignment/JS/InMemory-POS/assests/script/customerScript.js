@@ -104,6 +104,6 @@
 
     $("#btnClearCustomer").click(function(){
     clearCustomerFields();
-})
+});
 
 

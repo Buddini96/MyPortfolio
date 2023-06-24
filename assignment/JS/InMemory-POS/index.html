@@ -197,89 +197,12 @@
                     <th style="background-color: #76a9d0" scope="col">Item ID</th>
                     <th style="background-color: #76a9d0" scope="col">Quantity</th>
                     <th style="background-color: #76a9d0" scope="col">Discount</th>
-                    <th style="background-color: #76a9d0" scope="col">Total</th>
-                    <th style="background-color: #76a9d0" scope="col">Action</th>
+                    <th style="background-color: #76a9d0" id="totalOrders" scope="col">Total</th>
+                    <!--<th style="background-color: #76a9d0" scope="col">Action</th>-->
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="col">O001</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">4</th>
-                    <th scope="col">400.00</th>
-                    <th scope="col">5000.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="col">O002</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">5</th>
-                    <th scope="col">300.00</th>
-                    <th scope="col">1800.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="col">O003</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">2</th>
-                    <th scope="col">100.00</th>
-                    <th scope="col">2000.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="col">O004</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">2</th>
-                    <th scope="col">100.00</th>
-                    <th scope="col">1900.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="col">O005</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">2</th>
-                    <th scope="col">100.00</th>
-                    <th scope="col">1900.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="col">O006</th>
-                    <th scope="col">2023-05-25</th>
-                    <th scope="col">C001</th>
-                    <th scope="col">I001</th>
-                    <th scope="col">2</th>
-                    <th scope="col">100.00</th>
-                    <th scope="col">1900.00</th>
-                    <th scope="col">
-                        <button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    </th>
-                </tr>
+                <tbody id="tblFinalOrder">
+
                 </tbody>
             </table>
         </main>
@@ -295,13 +218,13 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Order ID</span>
-                                <input class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="orderIdPlaceOrder" type="text" placeholder="O-001" aria-label="Disabled input example" >
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Date</span>
-                                <input class="form-control" type="text" placeholder="2023-05-23" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="orderDatePlaceOrder" type="date" placeholder="2023-05-23" aria-label="Disabled input example">
                             </div>
                         </div>
                         <div class="col">
@@ -434,14 +357,14 @@
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Discount</span>
-                                <input class="form-control" ID="discount" type="number" placeholder="" aria-label="Disabled input example">
+                                <input class="form-control" id="discountPlaceOrder" type="text" placeholder="" aria-label="Disabled input example">
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="input-group">
                                 <span class="input-group-text">Sub Total</span>
-                                <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                                <input class="form-control" id="subTotalPlaceOrder" type="text" placeholder="" aria-label="Disabled input example">
                             </div>
                         </div>
                     </div>
@@ -449,8 +372,8 @@
                 <div class="row mt-3">
                     <div class="col-10"></div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-success">Purchase</button>
-                        <button type="button" class="btn btn-danger">Cancel</button>
+                        <button type="button" id="btnPurchaseFinalOrder" class="btn btn-success">Purchase</button>
+                        <button type="button" id="btnClearOrders" class="btn btn-danger">Cancel</button>
                     </div>
                 </div>
             </section>
