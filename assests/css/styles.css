@@ -2245,6 +2245,10 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         display:none;
     }
 
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(8) {
+        background-position-y: -21vh;
+    }
+
 
 
     .slider {
@@ -2340,6 +2344,10 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         /* position: relative; */
         width: 367px;
 
+    }
+
+    main #about {
+        height: 89vh;
     }
 
     button.download {
@@ -2525,6 +2533,289 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     nav.menu{
         display: none;
     }
+
+    #heading1 {
+        font-size: 34px;
+        top: 10px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    main #home section div:first-child>aside:nth-child(1)>h1:first-child {
+        font-size: 32px;
+        width: 330px;
+        margin-left: 139px;
+        margin-top: 55px;
+    }
+
+    .animated-text span {
+        font-size: 26px;
+    }
+
+    .animated-text {
+        font-size: 26px;
+        top: 2px;
+        margin-left: 40px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+        margin-left: 132px;
+        margin-top: 26px;
+    }
+
+    main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
+        margin-left: 142px;
+    }
+
+    .blob2 {
+        display: none;
+    }
+
+    main #about {
+        margin-top: -152px;
+    }
+
+    .profile2 {
+        padding-right: 4%;
+        margin-top: 12px;
+        width: 354px;
+    }
+
+    main #about h2 {
+        margin-left: 30px;
+        margin-bottom: 7px;
+    }
+
+    .para, .para1, .info {
+        font-size: 16px;
+        line-height: 22px;
+        padding-right: 30px;
+        padding-left: 34px;
+    }
+
+    #education {
+        height: 149vh;
+        margin-top: -23px;
+
+    }
+
+    main #education section:first-child>h1 {
+        font-size: 40px;
+    }
+
+    main #education section:first-child>h1::after {
+        display: none;
+    }
+
+    .eduImg {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(1) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(2) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(3) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(4) {
+        display: none;
+    }
+
+    #education section>div:nth-child(1) {
+        margin-left: -9%;
+    }
+
+    #education section>div:nth-child(2) {
+        margin-left: -9%;
+    }
+
+    main #education section:first-child {
+        padding-top: 73px;
+        margin-bottom: -72px;
+    }
+
+    #education section>div:nth-child(3) {
+        margin-left: 2%;
+    }
+
+    #education section>div:nth-child(4) {
+        margin-left: -5%;
+    }
+
+    #education section>div:nth-child(5) {
+        margin-left: -9%;
+    }
+
+    #education section>div {
+        width: 320px;
+        padding-right: 42px;
+    }
+
+    main #education section:nth-child(2)>section>div>h4:nth-child(2) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    main #education section:nth-child(2)>section>div>p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    main .skills {
+        margin-top: -73px;
+        height: 40vh;
+    }
+
+    .skills>h1::after {
+        display: none;
+    }
+
+    .skills>h1 {
+        font-size: 40px;
+        padding-top: 50px;
+        padding-bottom: 1px;
+    }
+
+    .slider {
+        width: 87%;
+        margin-left: 23px;
+    }
+
+    main #gallery section:first-child h1 {
+        font-size: 40px;
+    }
+
+    main #gallery section:first-child h1::after {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child {
+        width: 1100px;
+        margin-left: 15px;
+        margin-right: 18px;
+        margin-top: -29px;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(6) {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(8) {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(3) {
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(5) {
+        grid-column: 1/3;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(7) {
+        display: none;
+    }
+
+    main #projects section:first-child>h1 {
+        font-size: 40px;
+    }
+
+    main #projects section:first-child>h1::after {
+        display: none;
+    }
+
+    .card {
+        margin-left: -18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .wrapper {
+        /* width: 1381px; */
+        display: block;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: -21px;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: 13px;
+    }
+
+    .card-thumb {
+        margin-left: 12px;
+        width: 266px;
+    }
+
+    .card_detail {
+        height: 285px;
+        margin-left: -34px;
+        width: 136%;
+    }
+
+    main #projects {
+        height: 280vh;
+    }
+
+    .heading_text {
+        font-size: 20px;
+        padding-top: -16px;
+    }
+
+    #contact #contact_info {
+        width: 68%;
+        height: 80%;
+        margin-left: 40px;
+    }
+
+    .wave3 img {
+        width: 341px;
+    }
+
+    #contact #contact_info h3 {
+        font-size: 29px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    pre {
+        font-size: 0.9em;
+        margin-left: -44px;
+    }
+
+    .wave img {
+        width: 341px;
+        height: 347px;
+    }
+
+    main #contact {
+        height: 113vh;
+        height: 92vh;
+    }
+
+    #contact #contact_form {
+        display: none;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+        display: none;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+
+
 }
 
 @media (max-width: 376px) {
@@ -2546,7 +2837,275 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         display: none;
     }
 
+    main #home section div:first-child>aside:nth-child(1)>h1:first-child {
+        font-size: 29px;
+        width: 330px;
+        margin-left: 139px;
+        margin-top: 55px;
 
+    }
+
+    .animated-text span {
+        font-size: 26px;
+    }
+
+    .animated-text {
+        font-size: 26px;
+        top: 2px;
+        margin-left: 40px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+        margin-left: 132px;
+        margin-top: 26px;
+    }
+
+    main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
+        margin-left: 142px;
+    }
+
+    .blob2 {
+        display: none;
+    }
+
+    main #about {
+        margin-top: -152px;
+    }
+
+    .profile2 {
+        padding-right: 4%;
+        margin-top: 12px;
+        width: 354px;
+    }
+
+    main #about h2 {
+        margin-left: 30px;
+        margin-bottom: 7px;
+    }
+
+    .para, .para1, .info {
+        font-size: 15px;
+        line-height: 22px;
+        padding-right: 7px;
+        padding-left: 23px;
+    }
+
+    #education {
+        height: 149vh;
+        margin-top: -29px;
+    }
+
+    main #education section:first-child>h1 {
+        font-size: 40px;
+    }
+
+    main #education section:first-child>h1::after {
+        display: none;
+    }
+
+    .eduImg {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(1) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(2) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(3) {
+        display: none;
+    }
+
+    .arrowImg img:nth-child(4) {
+        display: none;
+    }
+
+    #education section>div:nth-child(1) {
+        margin-left: -12%;
+    }
+
+    #education section>div:nth-child(2) {
+        margin-left: -12%;
+    }
+
+    main #education section:first-child {
+        padding-top: 73px;
+        margin-bottom: -72px;
+    }
+
+    #education section>div:nth-child(3) {
+        margin-left: -2%;
+    }
+
+    #education section>div:nth-child(4) {
+        margin-left: -8%;
+    }
+
+    #education section>div:nth-child(5) {
+        margin-left: -12%;
+    }
+
+    #education section>div {
+        width: 290px;
+
+    }
+
+    main #education section:nth-child(2)>section>div>h4:nth-child(2) {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    main #education section:nth-child(2)>section>div>p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    main .skills {
+        margin-top: -73px;
+        height: 40vh;
+    }
+
+    .skills>h1::after {
+        display: none;
+    }
+
+    .skills>h1 {
+        font-size: 40px;
+        padding-top: 50px;
+        padding-bottom: 1px;
+    }
+
+    .slider {
+        width: 87%;
+        margin-left: 23px;
+    }
+
+    main #gallery section:first-child h1 {
+        font-size: 40px;
+    }
+
+    main #gallery section:first-child h1::after {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child {
+        margin-left: 12px;
+        margin-right: 34px;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(6) {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(8) {
+        display: none;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(3) {
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(5) {
+        grid-column: 1/3;
+    }
+
+    main #gallery section:nth-child(2)>section:first-child>div:nth-child(7) {
+        display: none;
+    }
+
+    main #projects section:first-child>h1 {
+        font-size: 40px;
+    }
+
+    main #projects section:first-child>h1::after {
+        display: none;
+    }
+
+    .card {
+        margin-left: -18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .wrapper {
+        /* width: 1381px; */
+        display: block;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: -21px;
+    }
+
+    main #projects section:nth-child(2) {
+        margin-top: 13px;
+    }
+
+    .card-thumb {
+        margin-left: 12px;
+        width: 266px;
+    }
+
+    .card_detail {
+        height: 327px;
+        margin-left: -34px;
+        width: 136%;
+    }
+
+    main #projects {
+        height: 291vh;
+    }
+
+    .heading_text {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    #contact #contact_info {
+        width: 71%;
+        height: 80%;
+        margin-left: 22px;
+        margin-right: 20px;
+    }
+
+    .wave3 img {
+        width: 332px;
+    }
+
+    #contact #contact_info h3 {
+        font-size: 29px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    pre {
+        font-size: 0.9em;
+        margin-left: -44px;
+    }
+
+    .wave img {
+        width: 332px;
+        height: 347px;
+    }
+
+    main #contact {
+        height: 113vh;
+        height: 92vh;
+    }
+
+    #contact #contact_form {
+        display: none;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(3)>ul:first-child {
+        display: none;
+    }
+
+    footer>section:first-child>div:first-child>nav:nth-child(2) {
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -2561,18 +3120,27 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     main #home section div:first-child>aside:nth-child(1)>h1:first-child {
-        font-size: 17px;
-        width: 137px;
+        font-size: 27px;
+        width: 330px;
+        margin-left: 139px;
+        margin-top: 55px;
 
     }
 
     .animated-text span {
-        font-size: 17px;
+        font-size: 22px;
+
     }
 
     .animated-text {
-        font-size: 17px;
-        top: -7px;
+        font-size: 22px;
+        top: 2px;
+        margin-left: 40px;
+    }
+
+    main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav {
+        margin-left: 132px;
+        margin-top: 26px;
     }
 
     .profile {
@@ -2583,6 +3151,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     main #home section div:first-child>aside:nth-child(1)>section:nth-child(3)>h3 {
         font-size: 15px;
+        padding-left: 30px;
     }
 
     main #home section>div:first-child>aside:nth-child(1)>section:nth-child(3)>nav>div {
@@ -2634,7 +3203,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     #education {
         height: 149vh;
-        margin-top: -326px;
+        margin-top: -270px;
     }
 
     main #education section:first-child>h1 {
@@ -2665,12 +3234,18 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         display: none;
     }
 
+    #education section>div {
+        width: 220px;
+
+    }
+
+
     #education section>div:nth-child(1) {
-        margin-left: -9%;
+        margin-left: -12%;
     }
 
     #education section>div:nth-child(2) {
-        margin-left: -9%;
+        margin-left: -12%;
     }
 
     main #education section:first-child {
@@ -2679,15 +3254,15 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     #education section>div:nth-child(3) {
-        margin-left: 2%;
+        margin-left: -1%;
     }
 
     #education section>div:nth-child(4) {
-        margin-left: -5%;
+        margin-left: -9%;
     }
 
     #education section>div:nth-child(5) {
-        margin-left: -9%;
+        margin-left: -12%;
     }
 
     main .skills {
@@ -2697,7 +3272,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     .skills>h1 {
         margin-top: 19px;
-        margin-bottom: 11px;
+        margin-bottom: -27px;
         padding-bottom: 5px;
         font-size: 30px;
     }
@@ -2725,7 +3300,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
     main #gallery section:nth-child(2)>section:first-child {
         margin-left: 19px;
-        margin-right: 28px;
+        margin-right: 36px;
 
     }
 
@@ -2798,10 +3373,11 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     #contact #contact_info {
-        width: 58%;
-        height: 52%;
+        width: 69%;
+        height: 80%;
         margin-left: 20px;
     }
+
     .wave3 img {
         width: 275px;
     }
