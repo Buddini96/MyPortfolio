@@ -375,11 +375,90 @@
             transform: translateY(0px);
         }
 
-        /*Responsive*/
-        /*-------------Web page Section-----------------------*/
-        /*.container h1::after {
-            top: 100px;
-        }*/
+        /*---------------Responsive Part--------------------------*/
+
+        /*--------------------------Page Responsive -1440px---------------------------------*/
+        @media (max-width: 1440px){
+            .container h1::after {
+                display: none;
+            }
+
+            card .ui-card {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 32px;
+            }
+
+        }
+
+        /*--------------------------Page Responsive -1024px---------------------------------*/
+        @media (max-width: 1024px){
+            .card .ui-card {
+                margin-left: 60px;
+                margin-right: 48px;
+            }
+        }
+
+
+        /*--------------------------Page Responsive -768px---------------------------------*/
+        @media (max-width: 768px){
+            .card .ui-card {
+                margin-left: -6px;
+                margin-right: -25px;
+            }
+        }
+
+        /*--------------------------Page Responsive - 425px---------------------------------*/
+        @media (max-width: 426px){
+            .card .ui-card {
+                margin-left: 9px;
+                margin-right: -25px;
+                margin-top: 24px;
+            }
+
+            .navigation {
+                width: 388px;
+                margin-left: 20px;
+                top: 8px;
+            }
+        }
+
+
+        /*--------------------------Page Responsive - 376px---------------------------------*/
+        @media (max-width: 376px){
+
+            body {
+                width: 104vw;
+            }
+
+            .card .ui-card {
+                margin-left: -10px;
+                margin-right: -25px;
+                margin-top: 11px;
+            }
+
+            .navigation {
+                width: 354px;
+                margin-left: 20px;
+                top: 8px;
+            }
+        }
+
+        /*--------------------------Page Responsive - 320px---------------------------------*/
+        @media (max-width: 320px){
+            body {
+                width: 110vw;
+            }
+
+            .card .ui-card {
+                margin-left: -24px;
+            }
+
+            .navigation {
+                width: 319px;
+            }
+        }
+
 
     </style>
 </head>

@@ -101,12 +101,50 @@ header > h1 {
     font-weight: 600;
 }
 
+
 .menu ul li a {
     line-height: 20px;
     text-decoration: none;
     transition: 0.3s all;
     color: #0c1154;
     font-size: 19px;
+}
+
+.menu ul li #active {
+    color: #FFA500;
+}
+
+.menu ul li a:hover {
+    color: #FFA500;
+}
+
+.menu ul li #active {
+    color: #FFA500;
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: #FFA500;
+    border-radius: 26%;
+    transition: width .3s;
+}
+
+.hover-line:hover::after {
+    width: 40%;
+    transition: width .3s;
+}
+
+.active-hover-line::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 6px;
+    background-color: #FFA500;
+    border-radius: 26%;
+    transition: width .3s;
 }
 
 main {
@@ -121,6 +159,7 @@ main #home {
     width: 100%;
     height: 99vh;
     margin-top: -150px;
+    /*padding-top: 160px;*/
 
 }
 
@@ -543,13 +582,19 @@ main #education section:first-child>h1 {
     margin-top: -936px;
 }
 
-
-.cir1{
+#cir1{
     position: absolute;
     right: 7px;
     left: 364px;
     margin-top: -654px;
+    /*-webkit-transition: -webkit-transform 1s;*/
 }
+
+#cir1:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+
 main #education section:first-child>h1::after {
     content: "";
     position: absolute;
@@ -2330,6 +2375,8 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         top: 27%;
     }
 
+    .
+
     main #home section div:first-child>aside:nth-child(1) {
          margin-left: -110px;
          top: 19%;
@@ -2844,6 +2891,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
 }
 
+/*--------------------------Page Responsive - 376px---------------------------------*/
 @media (max-width: 376px) {
     nav.menu{
         display: none;
@@ -3135,6 +3183,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
 
 }
 
+/*--------------------------Page Responsive - 320px---------------------------------*/
 @media (max-width: 320px) {
     nav.menu{
         display: none;

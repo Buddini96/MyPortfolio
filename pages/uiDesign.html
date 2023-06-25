@@ -22,30 +22,6 @@
 
   <style>
 
-    #loader {
-      transition: opacity 1s;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: white;
-    }
-
-    #loader > div {
-      width: 200px;
-      height: 300px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      background-image: url("assests/gif/loader2.gif");
-      /*background-size: cover;*/
-      background-position: center;
-    }
-
     .container h1{
       font-family: Ubuntu, sans-serif;
       font-size: 50px;
@@ -400,15 +376,96 @@
       transform: translateY(0px);
     }
 
+
+
+    /*---------------Responsive Part--------------------------*/
+
+    /*--------------------------Page Responsive -1440px---------------------------------*/
+    @media (max-width: 1440px){
+      .container h1::after {
+        display: none;
+      }
+
+      .card .ui-card {
+        margin-top: 138px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+    }
+
+    /*--------------------------Page Responsive -1024px---------------------------------*/
+    @media (max-width: 1024px){
+      .card .ui-card {
+        margin-left: 60px;
+        margin-right: 48px;
+      }
+    }
+
+
+    /*--------------------------Page Responsive -768px---------------------------------*/
+    @media (max-width: 768px){
+      .card .ui-card {
+        margin-left: -6px;
+        margin-right: -25px;
+      }
+    }
+
+    /*--------------------------Page Responsive - 425px---------------------------------*/
+    @media (max-width: 426px){
+      .card .ui-card {
+        margin-left: 9px;
+        margin-right: -25px;
+        margin-top: 152px;
+      }
+
+      .navigation {
+        width: 388px;
+        margin-left: 20px;
+        top: 8px;
+      }
+    }
+
+
+    /*--------------------------Page Responsive - 376px---------------------------------*/
+    @media (max-width: 376px){
+
+      body {
+        width: 104vw;
+      }
+
+      .card .ui-card {
+        margin-left: -10px;
+        margin-right: -25px;
+        margin-top: 151px;
+      }
+
+      .navigation {
+        width: 354px;
+        margin-left: 20px;
+        top: 8px;
+      }
+    }
+
+    /*--------------------------Page Responsive - 320px---------------------------------*/
+    @media (max-width: 320px){
+      body {
+        width: 110vw;
+      }
+
+      .card .ui-card {
+        margin-left: -24px;
+      }
+
+      .navigation {
+        width: 319px;
+      }
+    }
+
+
   </style>
 </head>
 <body>
-  <header>
-    <div id="loader">
-      <div></div>
-    </div>
-  </header>
-
 <main>
   <section id="portfolio" class="portfolio">
     <div class="container">

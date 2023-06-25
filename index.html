@@ -22,6 +22,7 @@
         <link rel="icon" href="assests/images/favicon.png">
 
 
+
 </head>
 <!--Body Content-->
 <body>
@@ -32,7 +33,7 @@
     </aside>
     <nav class="menu"> <!--The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
         <ul>
-            <li><!--<i class="fa-solid fa-house"></i>--><a href="#home">Home</a></li>
+            <li><!--<i class="fa-solid fa-house"></i>--><a href="#home" id="active">Home</a></li>
             <li><!--<i class="fa-solid fa-address-card"></i>--><a href="#about">About</a> </li>
             <li><!--<i class="fa-solid fa-user-graduate"></i>--><a href="#education">Education</a> </li>
             <li><!--<i class="fa-regular fa-images"></i>--><a href="#gallery">Gallery</a></li>
@@ -214,7 +215,8 @@
                 <img src="assests/images/arrow.PNG">
                 <div class="blob5"><img src="assests/images/blob6.png"></div>
                 <div class="bl1"><img src="assests/images/bl1.png" width="470" ></div>
-                <div class="cir1"><img src="assests/images/cir1.png"></div>
+                <div id="cir1">
+                    <img id="cirC" src="assests/images/cir1.png"></div>
                 <!-- <div class="cir3"><img src="assests/images/cir3.png" width="250" ></div>-->
 
             </div>
@@ -427,16 +429,16 @@
 
             </aside>
 
-            <form action="" id="contact_form" method="post" target="_blank">
+            <form class="contact_form" id="contact_form" action="" method="post" target="_blank">
                 <h4>Get in Touch</h4>
-                <input type="text" id="clientName" placeholder="Name" required>
+                <input type="text" id="name" placeholder="Name" autocomplete="off" required>
                 <br>
-                <input type="email" id="clientEmail" placeholder="Email" required>
+                <input type="email" id="email" placeholder="Email" autocomplete="off" required>
                 <br>
-                <textarea name="message" id="clientMsg" placeholder="Message" spellcheck="false" required></textarea>
+                <textarea name="message" id="msg" placeholder="Message" autocomplete="off" spellcheck="false" required></textarea>
                 <br>
-                <button type="submit">
-                    <a href="buddinikl1996@gmail.com">Leave a Comment</a>
+                <button id="btnSubmit" type="submit">
+                    <!--<a href="buddinikl1996@gmail.com">-->Leave a Comment</a>
                 </button>
 
                     <!--<button class="btn btn3">Leave a Comment</button>-->
@@ -489,6 +491,10 @@
     <section><small>Buddini Pathinayaka &copy; 2023 - All rights reserved</small></section>
 </footer>
 <script src="assests/css/js/jquery-3.6.1.min.js"></script>
+<script src="assests/css/js/smtp.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
 <script>
     let loader = document.getElementById("loader");
     //this is it. this will execute after the window is fully loaded
@@ -499,7 +505,59 @@
         loader.style.display = 'none';
     });
 
+    var btn = document.getElementById('btnSubmit');
+    btn.addEventListener('click',function (e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        /*var subject = document.getElementById('subject').value;*/
+        var msg = document.getElementById('msg').value;
+
+        var body = 'name: ' +name + '<br/> email: ' + email + '<br/> subject:' +subject + '<br/> msg: ' + msg;
+        console.log('hiiiiiiiii');
+
+    /*const form = document.querySelector('.contact_form');
+    function sendMsg(e) {
+        e.preventDefault();
+
+            const name = document.querySelector('.name'),
+            email = document.querySelector('.email'),
+            message = document.querySelector('.message');
+
+        Email.send({
+            SecureToken : "05e526d6-35f5-479a-95b6-8f26d6f6d1e3",
+            To : 'akeshidesilva00@gmail.com',
+            From : email.value,
+            Subject : "Contact Form",
+            Body : message.value
+        }).then(
+            message => alert(message)
+        );
+    }*/
+
+   /* form.addEventListener('submit', sendMsg);*/
+
+
+
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "akeshidesilva00@gmail.com",
+            Password : "xifxpjkciiteohcy",
+            To : 'akeshidesilva00@gmail.com',
+            From : email,
+            Subject : 'contact Form',
+            Body : body
+        }).then(
+            message => alert(message)
+        );
+
+    })
+
 </script>
+
+
+
+
 
 
 

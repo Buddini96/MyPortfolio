@@ -389,6 +389,87 @@
             transform: translateY(0px);
         }
 
+
+        /*---------------Responsive Part--------------------------*/
+
+        /*--------------------------Page Responsive -1440px---------------------------------*/
+        @media (max-width: 1440px){
+            .container h1::after {
+                display: none;
+            }
+
+            .card .ui-card {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 32px;
+            }
+        }
+
+
+        /*--------------------------Page Responsive -1024px---------------------------------*/
+        @media (max-width: 1024px){
+
+        }
+
+        /*--------------------------Page Responsive -768px---------------------------------*/
+        @media (max-width: 768px){
+            .card .ui-card {
+                margin-left: -6px;
+                margin-right: -25px;
+            }
+        }
+
+        /*--------------------------Page Responsive - 425px---------------------------------*/
+        @media (max-width: 426px){
+            .card .ui-card {
+                margin-left: 9px;
+                margin-right: -25px;
+                margin-top: 24px;
+            }
+
+            .navigation {
+                width: 388px;
+                margin-left: 20px;
+                top: 8px;
+            }
+        }
+
+        /*--------------------------Page Responsive - 376px---------------------------------*/
+        @media (max-width: 376px){
+
+            body {
+                width: 104vw;
+            }
+
+            .card .ui-card {
+                margin-left: -10px;
+                margin-right: -25px;
+                margin-top: 11px;
+            }
+
+            .navigation {
+                width: 354px;
+                margin-left: 20px;
+                top: 8px;
+            }
+        }
+
+        /*--------------------------Page Responsive - 320px---------------------------------*/
+        @media (max-width: 320px){
+            body {
+                width: 110vw;
+            }
+
+            .card .ui-card {
+                margin-left: -24px;
+            }
+
+            .navigation {
+                width: 319px;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -404,34 +485,34 @@
 
             <!--Navigation-->
             <div class="navigation">
-                <ul>
+                <ul id="portfolio-filters">
                     <li class="list active">
                         <a href="#">
-                            <span class="icon" onclick="filterObjects('all')"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter="*"><i class="fa-solid fa-house"></i></span>
                             <span class="text">All</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon" onclick="filterObjects('standalone')"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter=".filter-standalone"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Standalone</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon" onclick="filterObjects('java')"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter=".filter-java"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Java</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon" onclick="filterObjects('python')"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter=".filter-python"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Python</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
-                            <span class="icon" onclick="filterObjects('hibernate')"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter=".filter-hibernate"><i class="fa-solid fa-house"></i></span>
                             <span class="text">Hibernate</span>
                         </a>
                     </li>
@@ -506,7 +587,7 @@
 
     function filterObjects(c){
         var x, i;
-        x = document.getElementById("ui-card");
+        x = document.getElementsByClassName("ui-card");
         if(c == "all") c = "";
         for ( i = 0; i <x.length; i++) {
             removeClass(x[i], "show");
