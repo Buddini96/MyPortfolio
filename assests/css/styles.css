@@ -13,9 +13,35 @@ body{
     overflow-y: scroll;
 
 }
+
 body::-webkit-scrollbar{
     display: none;
 }
+
+#loader {
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+#loader > div {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../gif/loader2.gif");
+    /*background-size: cover;*/
+    background-position: center;
+}
+
 #heading1 {
     position: relative;
     left: 10px;
