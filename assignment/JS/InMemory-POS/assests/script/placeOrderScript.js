@@ -1,7 +1,4 @@
 
-
-
-
     $('#cusIdList').click(function (){
         let selectedId = $('#cusIdList').val();
         /*console.log("hri");*/
@@ -60,9 +57,6 @@
             if (cellValue === itemId) {
 
                 // Update the existing row
-
-
-
 
                 let textContent = parseInt(row.cells[2].textContent);
 
