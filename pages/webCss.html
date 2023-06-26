@@ -210,6 +210,10 @@
             transform: translateX(calc(70px * 4));
         }
 
+        .navigation ul li:nth-child(6).active ~ .indicator {
+            transform: translateX(calc(70px * 5));
+        }
+
         .portfolio1 {
             font-family: 'Ubuntu', sans-serif;
             background-color: #ECF0F3;
@@ -302,8 +306,9 @@
         .card img{
             max-width: 100%;
         }
-        .card .ui-card{
-            width: 350px;
+
+        .card .ui-card {
+            width: 341px;
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease-out;
@@ -312,8 +317,7 @@
             /* padding-bottom: 103px; */
             margin-bottom: 30px;
             border-radius: 10%;
-            /*margin-left: 14px;
-            margin-right: 14px;*/
+            margin-left: 1%;
         }
 
         .card .ui-card img{
@@ -507,6 +511,12 @@
                                 <span class="text">Frameworks</span>
                             </a>
                         </li>
+                        <li data-filter=".filter-javascript" class="list">
+                            <a href="#">
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="text">JavaScript</span>
+                            </a>
+                        </li>
                         <div class="indicator"></div>
                     </ul>
                 </div>
@@ -631,7 +641,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - SPA</h3>
@@ -640,7 +650,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - QUE</h3>
@@ -649,7 +659,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - KNIGHT</h3>
@@ -658,7 +668,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - InMemory-POS</h3>
@@ -667,7 +677,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - CAL</h3>
@@ -676,7 +686,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - </h3>
@@ -685,7 +695,7 @@
                 </div>
             </div>
 
-            <div class="ui-card filter-frameworks">
+            <div class="ui-card filter-javascript">
                 <img src="assests/img/cloud.jpg">
                 <div class="description">
                     <h3>JS - </h3>
