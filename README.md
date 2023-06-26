@@ -13,7 +13,7 @@ Wirefram :https://drive.google.com/file/d/1idwIXmWS90PpVr0FdBVarK7NXrPm7m6d/view
 Mockup : https://www.figma.com/file/cVEqPceZTfMK0d6oluxaeO/Mock-Up?node-id=0%3A1&t=nh4EDox5JAqWS0Xx-1
 
 <h3>Deployment</h3>
-InfinityFree : https://buddini96.000webhostapp.com/ <br>
+000webhost : https://buddini96.000webhostapp.com/ <br>
 GitHub Pages : https://buddini96.github.io/MyPortfolio/ <br>
 
 🔗<h3> Web POS Using CSS FrameWorks</h3>
