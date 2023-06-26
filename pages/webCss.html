@@ -461,6 +461,7 @@
 
 
     </style>
+
 </head>
 <body>
 
@@ -474,32 +475,32 @@
 
                 <!--Navigation-->
                 <div class="navigation">
-                    <ul>
-                        <li class="list active">
+                    <ul id="filters">
+                        <li data-filter="*" class="list active">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">All</span>
                             </a>
                         </li>
-                        <li class="list">
+                        <li data-filter=".filter-basics" class="list">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">CSS</span>
                             </a>
                         </li>
-                        <li class="list">
+                        <li data-filter=".filter-animations" class="list">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">Animations</span>
                             </a>
                         </li>
-                        <li class="list">
+                        <li data-filter=".filter-transitions" class="list">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">Transitions</span>
                             </a>
                         </li>
-                        <li class="list">
+                        <li data-filter=".filter-frameworks" class="list">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">Frameworks</span>
@@ -693,6 +694,7 @@
             </div>
         </section>
  </main>
+    <script src="assests/css/js/jquery-3.6.1.min.js"></script>
     <script>
         const list = document.querySelectorAll('.list');
         function activeLink(){
@@ -712,6 +714,63 @@
             //hide the loader
             loader.style.display = 'none';
         });
+
+
+
+        /*filter part*/
+        window.addEventListener('load', () => {
+            let portfolioContainer = select('.card');
+            if (portfolioContainer) {
+                let portfolioIsotope = new Isotope(portfolioContainer, {
+                    itemSelector: '.ui-card'
+                });
+
+                let portfolioFilters = select('#filters li', true);
+
+                on('click', '#filters li', function (e) {
+                    e.preventDefault();
+                    portfolioFilters.forEach(function (el) {
+                        el.classList.remove('active');
+                    });
+                    this.classList.add('active');
+
+                    portfolioIsotope.arrange({
+                        filter: this.getAttribute('data-filter')
+                    });
+                    portfolioIsotope.on('arrangeComplete', function () {
+                        AOS.refresh()
+                    });
+                }, true);
+            }
+
+        });
+
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+            let selectEl = select(el, all)
+            if (selectEl) {
+                if (all) {
+                    selectEl.forEach(e => e.addEventListener(type, listener))
+                } else {
+                    selectEl.addEventListener(type, listener)
+                }
+            }
+        }
     </script>
     <!--<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>-->

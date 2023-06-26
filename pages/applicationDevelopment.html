@@ -485,10 +485,10 @@
 
             <!--Navigation-->
             <div class="navigation">
-                <ul id="portfolio-filters">
-                    <li class="list active">
+                <ul id="filters">
+                    <li data-filter="*" class="list active">
                         <a href="#">
-                            <span class="icon" data-filter="*"><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" ><i class="fa-solid fa-house"></i></span>
                             <span class="text">All</span>
                         </a>
                     </li>
@@ -585,7 +585,7 @@
 
     filterObjects("all");
 
-    function filterObjects(c){
+    /*function filterObjects(c){
         var x, i;
         x = document.getElementsByClassName("ui-card");
         if(c == "all") c = "";
@@ -617,7 +617,61 @@
         }
         element.className = arr1.join("");
     }
+*/
 
+    window.addEventListener('load', () => {
+        let portfolioContainer = select('.card');
+        if (portfolioContainer) {
+            let portfolioIsotope = new Isotope(portfolioContainer, {
+                itemSelector: '.ui-card'
+            });
+
+            let portfolioFilters = select('#filters li', true);
+
+            on('click', '#filters li', function (e) {
+                e.preventDefault();
+                portfolioFilters.forEach(function (el) {
+                    el.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                portfolioIsotope.arrange({
+                    filter: this.getAttribute('data-filter')
+                });
+                portfolioIsotope.on('arrangeComplete', function () {
+                    AOS.refresh()
+                });
+            }, true);
+        }
+
+    });
+
+
+    /**
+     * Easy selector helper function
+     */
+    const select = (el, all = false) => {
+        el = el.trim()
+        if (all) {
+            return [...document.querySelectorAll(el)]
+        } else {
+            return document.querySelector(el)
+        }
+    }
+
+    /**
+     * Easy event listener function
+     */
+    const on = (type, el, listener, all = false) => {
+        let selectEl = select(el, all)
+        if (selectEl) {
+            if (all) {
+                selectEl.forEach(e => e.addEventListener(type, listener))
+            } else {
+                selectEl.addEventListener(type, listener)
+            }
+        }
+    }
 
 </script>
 <!--<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
