@@ -27,41 +27,107 @@
     let cartDetails=[];
 
     $("#btnAddToCart").click(function(){
-
-        let tBody =$("#tblPlaceOrder");
-
-
-        let itemId = $("#txtItemId").val();
-        for (var i = 0; i <=$('tbody').find('tr').length; i++) {
-            var row =  $('tbody').find(i);
-            console.log("ROw eka",row);
-            var itemIdElement = $(row).find('td:first'); // Selects the first <td> element in the row
-
-            var itemId44 = itemIdElement.text(); // Retrieves the text content of the <td> element
-
-
-
-
-            if (itemId44 ==itemId){
-                alert("gggggggg");
-            }
-        }
-
         let itemDes = $("#txtItemName").val();
         let itemPrice = $("#txtItemPrice").val();
         let itemQty = $("#itemQtyPO").val();
         let totalOrder = itemPrice * itemQty;
+        let itemId = $("#txtItemId").val();
+        var itemExists = false;
+
+        table = document.getElementById("tblPlaceOrder");
+       //  var row = table.insertRow(table.rows.length);
+       // let cell1 = row.insertCell(0);
+       //  let cell2 = row.insertCell(1);
+       //  let cell3 = row.insertCell(2);
+       //  let cell4 = row.insertCell(3);
+       //  let cell5 = row.insertCell(4);
+       //
+       //  cell1.innerText=itemId;
+       //  cell2.innerText=itemDes;
+       //  cell3.innerText=itemQty;
+       //  cell4.innerText=itemPrice;
+       //  cell5.innerText=totalOrder;
 
 
 
 
-        let tr = $('<tr><td>'+itemId+'</td> <td>'+itemDes+'</td> <td>'+itemQty+'</td> <td>'+itemPrice+'</td><td>'+totalOrder+'</td></tr>');
+        for (var i = 0; i < table.rows.length; i++) {
+            var row = table.rows[i];
+            var cellValue = row.cells[0].innerHTML; // Get the value from the first cell (item ID)
+            var  qty=parseInt($('#itemQtyPO').val());
+            // Check if item ID already exists
 
-        //set the row to the table body
-        tBody.append(tr);
+            if (cellValue === itemId) {
+
+                // Update the existing row
+
+
+
+
+                let textContent = parseInt(row.cells[2].textContent);
+
+                row.cells[2].innerHTML = qty+textContent; // Update quantity
+
+                row.cells[4].innerHTML =itemPrice  * (qty+textContent);
+                // Update total price
+                // clearTextFeildOrder();
+                // tot=tot+(pr * qty);
+                // $('#txtTot').val(tot);
+                // $('#txtSubTot').val(tot);
+                // // Set the flag to indicate item exists
+                itemExists = true;
+                break; // Exit the loop
+            }
+        }
+        if (!itemExists){
+
+            var  qty=$('#itemQtyPO').val();
+            var itemforTable;
+
+            itemList.forEach(function(item) {
+                if (item.id==itemId){
+                    // item.qty=item.qty-qty;
+                    itemforTable=item;
+                }
+            });
+
+
+
+            var row = table.insertRow(table.rows.length);
+
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            let cell4 = row.insertCell(3);
+            let cell5 = row.insertCell(4);
+
+
+            cell1.innerHTML=itemforTable.id;
+            cell2.innerHTML=itemforTable.description;
+            cell3.innerHTML=qty;
+            cell4.innerHTML=itemforTable.price;
+            cell5.innerHTML=itemforTable.price*qty;
+            // tot=tot+itemforTable.price*qty;
+        }
+
+
+
+
+
+
 
         cartDetails.push({id:itemId, description:itemDes, price:itemPrice, qty:itemQty, total:totalOrder})
 
+
+        var totDDD=0;
+        for (var i = 0; i < table.rows.length; i++) {
+            var row = table.rows[i];
+            var cellValue = parseInt(row.cells[4].innerHTML);
+            totDDD=totDDD+cellValue;
+
+        }
+        $('#txtTot').val(totDDD);
+        $('#txtSubTot').val(totDDD);
         //    load id's into place order forms
         let cusIdList = document.getElementById("cusIdList");
 
