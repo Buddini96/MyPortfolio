@@ -1993,12 +1993,13 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
         margin-top: -936px;
     }
 
-    .cir1 {
+    #cir1 {
         position: absolute;
         right: 7px;
-        left: 88px;
-        margin-top: -654px;
+        left: 128px;
+        margin-top: -655px;
     }
+
 
     #education section:nth-child(2)>section>div>h4:nth-child(2) {
         font-size: 18px;
@@ -2313,6 +2314,10 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     #cirAbout{
+        display:none;
+    }
+
+    #cir1 {
         display:none;
     }
 
@@ -2943,7 +2948,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     main #about {
-        margin-top: -152px;
+        margin-top: -66px;
     }
 
     .profile2 {
@@ -3410,7 +3415,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     }
 
     .card {
-        margin-left: -18px;
+        margin-left: -1px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -3450,7 +3455,7 @@ footer>section:first-child>div:first-child>h2:nth-child(4)>span {
     #contact #contact_info {
         width: 69%;
         height: 80%;
-        margin-left: 20px;
+        margin-left: 33px;
     }
 
     .wave3 img {
