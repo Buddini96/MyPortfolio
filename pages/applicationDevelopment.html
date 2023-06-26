@@ -29,6 +29,10 @@
 
         }
 
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
         .container h1{
             font-family: Ubuntu, sans-serif;
             font-size: 50px;
@@ -488,7 +492,7 @@
                 <ul id="filters">
                     <li data-filter="*" class="list active">
                         <a href="#">
-                            <span class="icon" ><i class="fa-solid fa-house"></i></span>
+                            <span class="icon" data-filter="*"><i class="fa-solid fa-house"></i></span>
                             <span class="text">All</span>
                         </a>
                     </li>

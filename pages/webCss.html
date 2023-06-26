@@ -22,6 +22,16 @@
 
     <style>
 
+        body{
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
         .container h1{
             font-family: Ubuntu, sans-serif;
             font-size: 50px;
@@ -210,10 +220,6 @@
             transform: translateX(calc(70px * 4));
         }
 
-        .navigation ul li:nth-child(6).active ~ .indicator {
-            transform: translateX(calc(70px * 5));
-        }
-
         .portfolio1 {
             font-family: 'Ubuntu', sans-serif;
             background-color: #ECF0F3;
@@ -379,6 +385,8 @@
             transform: translateY(0px);
         }
 
+
+
         /*---------------Responsive Part--------------------------*/
 
         /*--------------------------Page Responsive -1440px---------------------------------*/
@@ -481,13 +489,13 @@
                 <!--Navigation-->
                 <div class="navigation">
                     <ul id="filters">
-                        <li data-filter="*" class="list active">
+                        <!--<li data-filter="*" class="list active">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">All</span>
                             </a>
-                        </li>
-                        <li data-filter=".filter-basics" class="list">
+                        </li>-->
+                        <li data-filter=".filter-basics" class="list active">
                             <a href="#">
                                 <span class="icon"><i class="fa-solid fa-house"></i></span>
                                 <span class="text">CSS</span>
