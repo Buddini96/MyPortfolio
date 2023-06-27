@@ -18,8 +18,8 @@ GitHub Pages : https://buddini96.github.io/MyPortfolio/ <br>
 
 
 <h3> 🔗 Web POS Using CSS FrameWorks</h3>
- Site-Map : https://drive.google.com/file/d/1eWEmaahjJgHWX5uiR81lzvBYDUFOnlwf/view?usp=sharing](https://app.diagrams.net/#G12ZZcqeMwOTrq8SFXUTtn5OIBqdOES_3g <br>
- WireFrame : https://www.figma.com/file/5lNrfsDPFLnVMp1OZswxKS/POS-System-Wireframe?type=design&node-id=1%3A213&t=Rekh8tgFb704g7wZ-1 <br>
+ Site-Map : https://drive.google.com/file/d/12ZZcqeMwOTrq8SFXUTtn5OIBqdOES_3g/view?usp=drive_link <br>
+ WireFrame : https://app.diagrams.net/#G1CKTq30p5v5qey39ii0LbVIRvm4VQzoUQ <br>
  Mockup :  https://www.figma.com/file/G1pJSXD2gDZoB8XZ8goBAK/POS-System?type=design&node-id=4-198&t=BY5duY9kM462qZCd-0 <br>
 <h3>Developed By Buddini Pathinayaka</h3>
 
